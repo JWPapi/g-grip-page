@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
-// Step 5 - delete Instructions components
-import Instructions from '@/components/dom/Instructions'
+import NavBar from "@/components/dom/NavBar";
+import Image from "next/image";
+
 // import Shader from '@/components/canvas/Shader/Shader'
 
 // Dynamic import is used to prevent a payload when the website start that will include threejs r3f etc..
@@ -15,7 +16,29 @@ const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
 const Page = (props) => {
   return (
     <>
-      <Instructions />
+      <NavBar/>
+      <div className="flex  justify-center mt-16 w-100 mx-auto">
+        <Image src="/img/big_logo.jpg" alt="Logo" width={815} height={275} />
+      </div>
+      <div className="text-center text-2xl">By Greg Williams</div>
+      <div id="canvasPlaceholder" style={{height: "760px", width: ""}}>
+      </div>
+      <div className="font-medium text-center text-2xl">Hold your phone like a camera</div>
+      <div className="grid grid-cols-2 max-w-5xl mx-auto">
+        <div className="">
+          <div className="text-center text-2xl">Universally Compatible</div>
+          <ul>
+            <li>Shutter/grip works with iPhone and Android</li>
+            <li>Slides off when not in use</li>
+          </ul>
+
+        </div>
+        <div className="flex flex-col justify-center">
+          <div className="text-center text-2xl">The Grip</div>
+          <div className="text-center text-2xl">The Grip</div>
+        </div>
+      </div>
+
     </>
   )
 }
@@ -30,10 +53,10 @@ Page.r3f = (props) => (
 
 export default Page
 
-export async function getStaticProps() {
+export async function getStaticProps () {
   return {
     props: {
-      title: 'Index',
+      title: 'G–Grip by Greg Williams',
     },
   }
 }

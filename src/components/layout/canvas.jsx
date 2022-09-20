@@ -10,7 +10,7 @@ const LControl = () => {
   useEffect(() => {
     if (control.current) {
       const domElement = dom.current
-      const originalTouchAction = domElement.style['touch-action'] 
+      const originalTouchAction = domElement.style['touch-action']
       domElement.style['touch-action'] = 'none'
 
       return () => {
@@ -21,6 +21,7 @@ const LControl = () => {
   // @ts-ignore
   return <OrbitControls ref={control} domElement={dom.current} />
 }
+
 const LCanvas = ({ children }) => {
   const dom = useStore((state) => state.dom)
 
@@ -29,12 +30,13 @@ const LCanvas = ({ children }) => {
       mode='concurrent'
       style={{
         position: 'absolute',
-        top: 0,
+        top: -100,
       }}
       onCreated={(state) => state.events.connect(dom.current)}
     >
-      <LControl />
       <Preload all />
+      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} shadow-mapSize={[512, 512]} castShadow/>
+      <ambientLight intensity={0.3} />
       {children}
     </Canvas>
   )

@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['neue-haas-grotesk-text', 'sans-serif'],
+    }
   },
   variants: {
     extend: {},
