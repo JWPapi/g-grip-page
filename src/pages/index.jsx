@@ -81,7 +81,7 @@ const Page = (props) => {
           </div>
           <div>
             <p>
-              Note: To configure Burst mode on iPhone, go to Settings > Camera and enable the option to ‘Use Volume Up
+              Note: To configure Burst mode on iPhone, go to Settings &gt; Camera and enable the option to ‘Use Volume Up
               for Burst’.
             </p>
             <h5 className="mt-4">Shooting videos</h5>
