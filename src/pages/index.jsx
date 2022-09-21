@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import NavBar from "@/components/dom/NavBar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,11 +15,10 @@ const Shader = dynamic(() => import('@/components/canvas/Shader/Shader'), {
 const Page = (props) => {
   return (
     <>
-      <NavBar/>
       <div className="max-w-5xl mx-auto">
         <h1 className="font-normal text-uxl text-center">G-Grip</h1>
         <div id="canvasPlaceholder" style={{height: "720px", width: ""}}/>
-        <h2 className="text-center text-2xl mb-12">Hold your phone like a camera</h2>
+        <h2 className="text-center text-2xl mb-12" id="overview">Hold your phone like a camera</h2>
         <div className="grid grid-cols-2 mb-10">
           <div>
             <h5>Universally Compatible</h5>
@@ -80,8 +78,8 @@ const Page = (props) => {
           </div>
           <div>
             <p>
-              Note: To configure Burst mode on iPhone, go to Settings &gt; Camera and enable the option to ‘Use Volume Up
-              for Burst’.
+              Note: To configure Burst mode on iPhone, go to Settings &gt; Camera and enable the option to ‘Use Volume
+              Up for Burst’.
             </p>
             <h5 className="mt-4">Shooting videos</h5>
             <ul>
@@ -95,7 +93,7 @@ const Page = (props) => {
           </div>
         </div>
 
-        <h2 className="text-center text-2xl mt-8 mb-6">About</h2>
+        <h2 className="text-center text-2xl mt-8 mb-6" id="about">About</h2>
         <Image src={"/img/greg_holding_ggrip.jpg"} alt="greg" width={1024} height={600}/>
         <div className="grid grid-cols-2 mt-4 gap-5">
           <div>
@@ -117,7 +115,7 @@ const Page = (props) => {
         <video autoPlay muted>
           <source src="/videos/rotating_ggrip.mp4" type="video/mp4"/>
         </video>
-        <h2 className="text-center text-2xl mt-8 mb-6">Technical Specifications</h2>
+        <h2 className="text-center text-2xl mt-8 mb-6" id="techspecs">Technical Specifications</h2>
         <div className="grid grid-cols-2 gap-5">
           <div>
             <h5>Usage</h5>
@@ -142,9 +140,11 @@ const Page = (props) => {
         </h3>
         <div className="text-9xl text-center mb-4 -mt-6">£39</div>
         <div className="text-center mb-32 ">
-          <button className="rounded-full bg-blue-500 text-white px-4 py-2">
-            Buy
-          </button>
+          <a href="https://g-grip.swell.store/buy/QyQf8uwP">
+            <button className="rounded-full bg-blue-500 text-white px-4 py-2">
+              Buy
+            </button>
+          </a>
         </div>
         <hr className="mb-2"/>
         <div className="text-neutral-500 mb-8 text-sm">
@@ -189,8 +189,7 @@ const Page = (props) => {
             <li><Link href="/terms"><a>Terms & Conditions</a></Link></li>
             <li><Link href="/shipping"><a>Shipping & Return Policy</a></Link></li>
           </ul>
-          <p className="mt-4">2022 © G-Grip<br />
-             All rights reserved</p>
+          <p className="mt-4">2022 © G-Grip<br/> All rights reserved</p>
         </div>
       </footer>
     </>

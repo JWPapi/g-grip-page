@@ -6,6 +6,7 @@ import Dom from '@/components/layout/dom'
 import '@/styles/index.css'
 import dynamic from 'next/dynamic'
 import {Scroll, ScrollControls} from "@react-three/drei";
+import NavBar from "@/components/dom/NavBar";
 
 const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
   ssr: true,
@@ -21,6 +22,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
   return (
     <>
       <Header title={pageProps.title} />
+      <NavBar />
       <LCanvas>
       <ScrollControls
         pages={7} // Each page takes 100% of the height of the canvas

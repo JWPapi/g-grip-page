@@ -16,7 +16,7 @@ const Shader = (props) => {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh ref={mesh} geometry={nodes.GGrip.geometry} rotation={[-1.4, 3.15, 0.3]} scale={0.05} position={[0,-1.5,0]}>
+      <mesh ref={mesh} geometry={nodes.GGrip.geometry} rotation={[-1.35, 3.15, 0.3]} scale={0.05} position={[0,-1.7,0]}>
         <meshStandardMaterial color="#444" transparent castShadow/>
       </mesh>
     </group>

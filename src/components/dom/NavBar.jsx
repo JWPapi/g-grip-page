@@ -17,9 +17,11 @@ export default function NavBar() {
         <Link href="#techspecs">
           <a className=" hover:text-gray-900 mx-2 text-body font-body">Tech Specs</a>
         </Link>
-        <button className="rounded-full bg-blue-500 text-white px-4 py-2 mx-2">
-          Buy
-        </button>
+        <a href="https://g-grip.swell.store/buy/QyQf8uwP">
+          <button className="rounded-full bg-blue-500 text-white px-4 py-2 mx-2">
+            Buy
+          </button>
+        </a>
       </div>
     </div>
   )
