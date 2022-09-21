@@ -6,7 +6,7 @@
   * {
     box-sizing: border-box;
   }
-  
+
   html,
   body,
   #__next {
@@ -15,5 +15,15 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+  }
+
+  p {
+    @apply leading-5;
+  }
+  ul {
+    @apply list-disc ml-6;
+  }
+  h1,h2,h3,h5 {
+    @apply font-medium;
   }
 }

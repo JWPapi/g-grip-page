@@ -6,10 +6,15 @@ module.exports = {
   ], // remove unused styles in production
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'uxl': '16rem',
+      }
+    },
     fontFamily: {
       'sans': ['neue-haas-grotesk-text', 'sans-serif'],
-    }
+    },
+
   },
   variants: {
     extend: {},

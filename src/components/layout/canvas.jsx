@@ -30,9 +30,7 @@ const LCanvas = ({ children }) => {
       mode='concurrent'
       style={{
         position: 'absolute',
-        top: -100,
       }}
-      onCreated={(state) => state.events.connect(dom.current)}
     >
       <Preload all />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} shadow-mapSize={[512, 512]} castShadow/>
