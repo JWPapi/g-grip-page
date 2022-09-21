@@ -33,7 +33,7 @@ const LCanvas = ({ children }) => {
       }}
     >
       <Preload all />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} shadow-mapSize={[512, 512]} castShadow/>
+      <spotLight position={[10, 10, 10]} angle={0.8} penumbra={1} shadow-mapSize={[512, 512]} castShadow/>
       <ambientLight intensity={0.3} />
       {children}
     </Canvas>

@@ -10,21 +10,14 @@ const Shader = (props) => {
   const mesh  = useRef()
   const data = useScroll()
 
-  const { nodes, materials } = useGLTF('/ggrip.glb')
-  useFrame((state, delta) => {
-    const t = state.clock.getElapsedTime()
-
-    mesh.current.rotation.z = data.offset * 6.3
-
-
-  })
+  const { nodes, materials } = useGLTF('/compressedggrip.glb')
 
 
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh ref={mesh} geometry={nodes.GGrip.geometry} rotation={[-1.4, 0.05, 0.3]} scale={0.05} position={[0,1,0]}>
-        <meshStandardMaterial color="#666666" transparent castShadow/>
+      <mesh ref={mesh} geometry={nodes.GGrip.geometry} rotation={[-1.4, 3.15, 0.3]} scale={0.05} position={[0,-1.5,0]}>
+        <meshStandardMaterial color="#444" transparent castShadow/>
       </mesh>
     </group>
   )

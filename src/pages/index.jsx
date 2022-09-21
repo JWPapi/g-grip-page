@@ -18,9 +18,8 @@ const Page = (props) => {
     <>
       <NavBar/>
       <div className="max-w-5xl mx-auto">
-        <h1 className="font-normal text-uxl text-center -mt-8">G-Grip</h1>
-        <h3 className="font-normal text-center text-2xl -mt-10">By Greg Williams</h3>
-        <div id="canvasPlaceholder" style={{height: "640px", width: ""}}/>
+        <h1 className="font-normal text-uxl text-center">G-Grip</h1>
+        <div id="canvasPlaceholder" style={{height: "720px", width: ""}}/>
         <h2 className="text-center text-2xl mb-12">Hold your phone like a camera</h2>
         <div className="grid grid-cols-2 mb-10">
           <div>
@@ -190,7 +189,7 @@ const Page = (props) => {
             <li><Link href="/terms"><a>Terms & Conditions</a></Link></li>
             <li><Link href="/shipping"><a>Shipping & Return Policy</a></Link></li>
           </ul>
-          <p>2022 © G-Grip<br />
+          <p className="mt-4">2022 © G-Grip<br />
              All rights reserved</p>
         </div>
       </footer>

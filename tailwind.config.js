@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        'uxl': '16rem',
+        'uxl': '14rem',
       }
     },
     fontFamily: {
