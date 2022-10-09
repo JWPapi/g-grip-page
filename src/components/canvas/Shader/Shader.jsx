@@ -10,42 +10,18 @@ const Shader = (props) => {
 
   useFrame(() => {
     if (scrollPosition.offset * 10 < Math.PI) {
-      ref.current.rotation.y = scrollPosition.offset * 10
-      ref.current.position.y= -1.25
+      ref.current.rotation.y = Math.PI - scrollPosition.offset * 10
+      ref.current.position.y= -1.5
     } else {
-      ref.current.position.y = -1.25 + (scrollPosition.offset * 10 - Math.PI) * 5
+      ref.current.position.y = -1.5 + (scrollPosition.offset * 10 - Math.PI) * 5
     }
   })
   const {nodes, materials} = useGLTF('/out.glb')
 
   return (
     <>
-      <directionalLight
-        intensity={1}
-        decay={2}
-        color="#666666"
-        position={[0.19, 0.22, 0.11]}
-        rotation={[-2.02, -0.67, -0.29]}
-        scale={[0.94, 0.94, 1]}
-      />
-      <directionalLight
-        intensity={1}
-        decay={2}
-        color="#191919"
-        position={[-0.11, 0.19, -0.22]}
-        rotation={[-0.71, 0.35, -0.38]}
-        scale={[0.7, 0.7, 1]}
-      />
-      <directionalLight
-        intensity={1}
-        decay={2}
-        color="#333333"
-        position={[-0.29, 0.11, -0.06]}
-        rotation={[-1.08, 1.17, -0.45]}
-        scale={[0.98, 0.98, 1]}
-      />
 
-      <group ref={ref} position={[0, -1.25, 0]} scale={50}>
+      <group ref={ref} rotation={[0.2,Math.PI,0]} position={[0, -1.5, 0]} scale={50}>
 
         <mesh
           castShadow
