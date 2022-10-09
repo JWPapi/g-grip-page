@@ -11,6 +11,9 @@ const Shader = (props) => {
   useFrame(() => {
     if (scrollPosition.offset * 10 < Math.PI) {
       ref.current.rotation.y = scrollPosition.offset * 10
+      ref.current.position.y= -1.25
+    } else {
+      ref.current.position.y = -1.25 + (scrollPosition.offset * 10 - Math.PI) * 5
     }
   })
   const {nodes, materials} = useGLTF('/out.glb')
@@ -41,12 +44,7 @@ const Shader = (props) => {
         rotation={[-1.08, 1.17, -0.45]}
         scale={[0.98, 0.98, 1]}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.mesh_0.geometry}
-        material={materials["yellow high gloss plastic"]}
-      />
+
       <group ref={ref} position={[0, -1.25, 0]} scale={50}>
 
         <mesh
