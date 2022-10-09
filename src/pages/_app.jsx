@@ -23,12 +23,13 @@ function App({ Component, pageProps = { title: 'index' } }) {
     <>
       <Header title={pageProps.title} />
       <NavBar />
+
       <LCanvas>
       <ScrollControls
-        pages={7} // Each page takes 100% of the height of the canvas
+        pages={7.5} // Each page takes 100% of the height of the canvas
       >
+        {Component.r3f && Component.r3f(pageProps)}
         <Scroll>
-          {Component.r3f && Component.r3f(pageProps)}
         </Scroll>
         <Scroll html>
           <Dom>
