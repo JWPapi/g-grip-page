@@ -26,7 +26,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
 
       <LCanvas>
       <ScrollControls
-        pages={7.5} // Each page takes 100% of the height of the canvas
+        pages={9} // Each page takes 100% of the height of the canvas
       >
         {Component.r3f && Component.r3f(pageProps)}
         <Scroll>

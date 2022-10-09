@@ -17,10 +17,10 @@ const Page = (props) => {
     <>
       <div className="max-w-5xl mx-auto ">
         <h1 className="text-center text-6xl lg:text-9xl mt-16">The G-Grip</h1>
-        <div id="canvasPlaceholder" style={{height: "3600px", width: ""}}/>
+        <div id="canvasPlaceholder" style={{height: "4200px", width: ""}}/>
         <div className="bg-white pt-32">
-          <h2 className="text-center text-2xl mb-12" id="overview">Hold your phone like a camera</h2>
-          <div className="grid grid-cols-2 mb-10">
+          <h2 className="text-center text-2xl mb-8" id="overview">Hold your phone like a camera</h2>
+          <div className="grid grid-cols-2 mb-16">
             <div>
               <h5>Universally Compatible</h5>
               <ul>
@@ -43,21 +43,20 @@ const Page = (props) => {
             </div>
           </div>
           <Image src={"/img/holding_ggrip.jpg"} alt="holding_ggrip" width={1024} height={470}/>
-          <div className="grid grid-cols-2 gap-5 mt-8">
+          <div className="grid grid-cols-2 gap-5 mt-4 mb-32">
             <Image src={"/img/attached_ggrip.jpg"} alt="attacked_grip" width={472} height={470}/>
             <Image src={"/img/removing_ggrip.jpg?v=5"} alt="attacked_grip" width={472} height={470}/>
           </div>
-          <h2 className="text-center text-2xl mt-8">Up your Photography game</h2>
-          <p className="w-1/2 mt-8 mb-10">G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will
+          <h2 className="text-center text-2xl mt-8 mb-8 ">Up your Photography game</h2>
+          <p className="w-1/2 mb-16">G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will
                                           adhere
                                           to smooth, non-textured, non-porous, flat surfaces. They will not adhere to
                                           rubber, matte glass, silicon, TPU or soft touch coatings.
           </p>
-
-          <video className="mt-4" width="100%" height="auto" autoPlay muted>
+          <video className="mb-8"width="100%" height="auto" autoPlay muted>
             <source src="/videos/attaching_ggrip.mp4" type="video/mp4"/>
           </video>
-          <div className="grid grid-cols-2 mt-4 gap-5">
+          <div className="grid grid-cols-2 gap-5 mb-32">
             <div>
               <h5>Turning on</h5>
               <ul>
@@ -96,9 +95,9 @@ const Page = (props) => {
             </div>
           </div>
 
-          <h2 className="text-center text-2xl mt-8 mb-6" id="about">About</h2>
-          <Image src={"/img/greg_holding_ggrip.jpg"} alt="greg" width={1024} height={600}/>
-          <div className="grid grid-cols-2 mt-4 gap-5">
+          <h2 className="text-center text-2xl mb-16" id="about">About</h2>
+          <Image className="mb-8" src={"/img/greg_holding_ggrip.jpg"} alt="greg" width={1024} height={600}/>
+          <div className="grid grid-cols-2 my-8 gap-5">
             <div>
               <h2>Greg Williams</h2>
               <p>
@@ -111,15 +110,15 @@ const Page = (props) => {
               like a traditional camera.”
             </p>
           </div>
-          <h3 className="text-2xl mt-8 mb-6 max-w-sm text-center mx-auto">
+          <h3 className="text-2xl mt-64 mb-8 max-w-sm text-center mx-auto">
             Battery life 20 hours in use and 4,000 hours on standby.
           </h3>
-          <div className="text-uxl text-center -mt-24">20</div>
+          <div className="text-uxl text-center -mt-24 mb-64">20</div>
           <video autoPlay muted>
             <source src="/videos/rotating_ggrip.mp4" type="video/mp4"/>
           </video>
-          <h2 className="text-center text-2xl mt-8 mb-6" id="techspecs">Technical Specifications</h2>
-          <div className="grid grid-cols-2 gap-5">
+          <h2 className="text-center text-2xl mt-8 mb-8" id="techspecs">Technical Specifications</h2>
+          <div className="grid grid-cols-2 gap-5 mb-16">
             <div>
               <h5>Usage</h5>
               <ul>
@@ -138,13 +137,13 @@ const Page = (props) => {
               </ul>
             </div>
           </div>
-          <h3 className="text-2xl mt-16 mb-6 max-w-sm text-center mx-auto">
+          <h3 className="text-2xl mt-64 mb-6 max-w-sm text-center mx-auto">
             Special Introductory Price
           </h3>
           <div className="text-9xl text-center mb-4 -mt-6">£39</div>
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
-              <button className="rounded-full bg-blue-500 text-white px-4 py-2">
+              <button className="rounded-full bg-blue-500 text-white text-4xl  px-8 py-4">
                 Buy
               </button>
             </a>
