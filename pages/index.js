@@ -17,7 +17,7 @@ const LCanvas = dynamic(() => import('@/../../components/canvas'), {
   ssr: true,
 })
 
-// dom components goes here
+// ToDo: Separate in smaller components
 export default function Page (props) {
   return (
     <>
