@@ -3,16 +3,16 @@ import {useGLTF} from '@react-three/drei/core/useGLTF'
 import {useFrame} from "@react-three/fiber";
 import {useScroll} from "@react-three/drei";
 
-const Shader = () => {
+const GGrip = () => {
   const ref = useRef()
   const scrollPosition = useScroll()
 
   useFrame(() => {
     if (scrollPosition.offset * 10 < Math.PI) {
-      ref.current.rotation.y = Math.PI - scrollPosition.offset * 10
+      ref.current.rotation.y = Math.PI + scrollPosition.offset * 10
       ref.current.position.y= -1.5
     } else {
-      ref.current.position.y = -1.5 + (scrollPosition.offset * 10 - Math.PI) * 5
+      ref.current.position.y = -1.5 + (scrollPosition.offset * 10 - Math.PI) * 2 * Math.PI
     }
   })
   const {nodes, materials} = useGLTF('/out.glb')
@@ -121,4 +121,4 @@ const Shader = () => {
   )
 }
 
-export default Shader
+export default GGrip

@@ -9,7 +9,7 @@ import Head from "next/head";
 // WARNING ! errors might get obfuscated by using dynamic import.
 // If something goes wrong go back to a static import to show the error.
 // https://github.com/pmndrs/react-three-next/issues/49
-const Shader = dynamic(() => import('@/../../components/Shader'), {
+const Shader = dynamic(() => import('@/../../components/GGrip'), {
   ssr: false,
 })
 
@@ -34,7 +34,7 @@ export default function Page (props) {
 
             <div className="max-w-5xl mx-auto ">
                 <h1 className="text-center text-6xl lg:text-9xl mt-16">The G-Grip</h1>
-                <div id="canvasPlaceholder" style={{height: "4200px", width: ""}}/>
+                <div id="canvasPlaceholder" style={{height: "336vh", width: ""}}/>
                 <div className="bg-white pt-32">
                   <h2 className="text-center text-2xl mb-8" id="overview">Hold your phone like a camera</h2>
                   <div className="grid grid-cols-2 mb-16">

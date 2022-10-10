@@ -4,7 +4,6 @@ import {Suspense} from 'react'
 
 const LCanvas = ({children}) => {
   return (
-    <Suspense fallback={<LoadingSpinner/>}>
       <Canvas
         mode="concurrent"
         style={{
@@ -34,7 +33,6 @@ const LCanvas = ({children}) => {
 
         {children}
       </Canvas>
-    </Suspense>
   )
 }
 
