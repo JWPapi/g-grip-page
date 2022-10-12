@@ -1,9 +1,9 @@
 import {Canvas} from '@react-three/fiber'
 import {Preload} from '@react-three/drei'
-import {Suspense} from 'react'
 
 const LCanvas = ({children}) => {
   return (
+
       <Canvas
         mode="concurrent"
         style={{
@@ -35,7 +35,5 @@ const LCanvas = ({children}) => {
       </Canvas>
   )
 }
-
-const LoadingSpinner = () => ( <svg className="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"/> )
 
 export default LCanvas

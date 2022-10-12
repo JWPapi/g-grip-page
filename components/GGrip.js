@@ -3,6 +3,8 @@ import {useGLTF} from '@react-three/drei/core/useGLTF'
 import {useFrame} from "@react-three/fiber";
 import {useScroll} from "@react-three/drei";
 
+
+
 const GGrip = () => {
   const ref = useRef()
   const scrollPosition = useScroll()
@@ -18,7 +20,7 @@ const GGrip = () => {
   const {nodes, materials} = useGLTF('/out.glb')
 
   return (
-    <>
+
       <group ref={ref} rotation={[0.2,Math.PI,0]} position={[0, -1.5, 0]} scale={50}>
         <mesh
           castShadow
@@ -117,8 +119,8 @@ const GGrip = () => {
           material={materials["black medium gloss plastic"]}
         />
       </group>
-    </>
   )
 }
 
 export default GGrip
+
