@@ -15,15 +15,43 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    @apply text-sm md:text-base;
   }
 
+  main {
+    @apply max-w-5xl mx-auto mt-16;
+  }
+
+  h1,h2,h5 {
+    @apply font-medium;
+  }
+
+  h1 {
+    @apply text-center text-6xl lg:text-9xl;
+  }
+  h2 {
+    @apply text-center text-lg md:text-2xl mb-8;
+  }
   p {
     @apply leading-5;
   }
   ul {
-    @apply list-disc ml-6;
+    @apply list-disc ml-3 sm:ml-6;
   }
-  h1,h2,h3,h5 {
-    @apply font-medium;
+
+
+
+  button {
+    @apply rounded-full bg-blue-500 text-white;
   }
+}
+
+@layer components {
+  .c-grid-2 {
+    @apply md:grid md:grid-cols-2 gap-2 md:gap-5;
+  }
+}
+
+#canvas {
+  height: 336vh;
 }
