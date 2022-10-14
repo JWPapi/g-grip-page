@@ -6,7 +6,7 @@ import HTMLContent from "../components/HTMLContent";
 // https://github.com/pmndrs/react-three-next/issues/49
 const GGrip = dynamic(() => import('@/../../components/GGrip'), {ssr: false})
 
-const LCanvas = dynamic(() => import('@/../../components/canvas'), {ssr: false})
+const LCanvas = dynamic(() => import('@/../../components/Canvas'), {ssr: false})
 
 // ToDo: Separate in smaller components
 export default function Page (props) {
