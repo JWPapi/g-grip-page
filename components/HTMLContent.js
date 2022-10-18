@@ -1,36 +1,24 @@
 import Image from "next/image";
 import Footer from "./Footer";
-
-//ToDo: Add by Greg Williams
-//ToDo: Follow up to get Rendering
-//ToDo: Page stays the same and only the g-grip is rotaing
+import GGrip_Scroll from "./GGrip_Scroll";
+/*
+//ToDo: No bastards
+ToDo: Double check the paddings
+*/
 export default function HTMLContent () {
   return (
-    <div className="absolute top-0 left-0   w-screen h-screen">
+    <div className="absolute top-0 left-0 w-screen h-screen">
       <main>
-        <div className="flex justify-center">
-          <Image src="/img/logo_big.svg" alt="G-Grip Logo" width={567} height={209}/>
-        </div>
-        <div id="canvas"/>
-        <section className="mb-16 md:mb-32" id="overview">
-          <h2>Hold your phone like a camera</h2>
-          <div className="c-grid-2 mb-8 px-4 lg:px-0">
-            <div>
-              <h5>Universally Compatible</h5>
-              <ul>
-                <li>Shutter/grip works with iPhone and Android.</li>
-                <li>Slides off when not in use.</li>
-                <li>Superfast Bluetooth® connection.</li>
-                <li>USB-C rechargeable.</li>
-              </ul>
+        <div style={{height: '200vh'}}>
+          <div className="sticky top-24 ">
+            <div id="introLogo" className=" bg-white z-10 flex flex-col justify-center px-4 ">
+              <Image src="/img/logo_big.svg" alt="G-Grip Logo" width={567} height={209}/>
+              <h2 className="font-normal text-center">by Greg Williams</h2>
             </div>
-            <div className="mt-4 md:mt-0">
-              <p>
-                A Bluetooth® shutter in an ergonomically designed grip that enables you to hold and shoot one-handed
-                like a traditional camera.
-              </p>
-            </div>
+            <GGrip_Scroll/>
           </div>
+        </div>
+        <section className="mb-16 md:mb-32 mt-8" id="overview">
           <Image src={"/img/g-grip-hand-on-iphone.jpg"} alt="ggrip_holding" width={2400} height={1600}/>
           <div className="grid grid-cols-2 gap-2 md:gap-4 md:mt-2">
             <Image src={"/img/g-grip-on-iphone.jpg"} alt="ggrip_on_iphone" width={2400} height={1600}/>
@@ -51,7 +39,7 @@ export default function HTMLContent () {
             <div>
               <h5>Turning on</h5>
               <ul>
-                <li>Press and hold for 3 seconds</li>
+                <li>Press and hold for 3 seconds.</li>
               </ul>
               <h5 className="mt-4">Pairing G-Grip</h5>
               <ul>
@@ -107,10 +95,10 @@ export default function HTMLContent () {
                                                                 it like a traditional camera.</span>
             </p>
           </div>
-          <h2 className="mt-32 md:mt-64 max-w-sm mx-auto">
+          <h2 className="mt-20 md:mt-64 max-w-sm mx-auto text-center">
             Battery life 20 hours in use <br/> and 4,000 hours on standby.
           </h2>
-          <div className="text-uxl text-center mt-16 mb-64 tracking-tighter">20</div>
+          <div className="text-uxl text-center -mt-6 mb-2 tracking-tighter line-height leading-none">20</div>
           <h2 id="techSpecs">Technical Specifications</h2>
           <div className="c-grid-2 mb-16 px-4 md:p-0">
             <div>
@@ -134,8 +122,8 @@ export default function HTMLContent () {
           </div>
         </section>
         <section className="mt-16 md:mt-32">
-          <h2>Special Introductory Price </h2>
-          <div className="text-9xl text-center mb-4 -mt-4">£39</div>
+          <h2 className="text-center">Special Introductory Price </h2>
+          <div className="text-9xl text-center mb-4 -mt-4 tracking-tighter">£39</div>
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
               <button className="text-4xl px-8 py-4">
@@ -181,7 +169,9 @@ export default function HTMLContent () {
           </div>
         </section>
       </main>
-      <Footer/>
+      <div className="hidden">
+        <Footer/>
+      </div>
     </div>
   )
 }

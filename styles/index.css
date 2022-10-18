@@ -14,7 +14,6 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     @apply text-sm md:text-base;
   }
 
@@ -27,7 +26,7 @@
   }
 
   h2 {
-    @apply md:text-center text-lg md:text-2xl mb-8;
+    @apply md:text-center px-4 text-lg md:text-2xl mb-2 md:mb-8;
   }
   p {
     @apply leading-5;

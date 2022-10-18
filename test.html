@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script>
+		window.addEventListener('scroll', () => {
+			const registerVideo = (bound, video) => {
+				bound = document.querySelector(bound);
+				video = document.querySelector(video);
+
+				const scrollVideo = () => {
+					if (video.duration) {
+						const distanceFromTop = () => window.scrollY +
+						bound.getBoundingClientRect().top;
+						console.log(distanceFromTop());
+						/*const rawPercentScrolled = ( window.scrollY - distanceFromTop ) / (
+								bound.scrollHeight - window.innerHeight );
+						const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+
+						video.currentTime = video.duration * percentScrolled;*/
+					}
+					window.requestAnimationFrame(scrollVideo);
+				}
+				window.requestAnimationFrame(scrollVideo);
+			}
+
+			registerVideo("#bound", "#bound video");
+
+		})
+
+	</script>
+</head>
+<body>
+<div id="bound" style="height: 500vh">
+	<div id="content" style="height:100vh; width: 100%; position: sticky; top: 0; display: flex">
+		<video id="vid" width="600" muted>
+			<source src="public/videos/rotating_ggrip.webm"/>
+		</video>
+	</div>
+</div>
+
+</body>
+</html>

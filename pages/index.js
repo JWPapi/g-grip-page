@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import {Scroll, ScrollControls} from "@react-three/drei";
 import Head from "next/head";
 import HTMLContent from "../components/HTMLContent";
 
@@ -14,15 +13,9 @@ export default function Page (props) {
     <Head>
       <title>G–Grip by Greg Williams</title>
     </Head>
-    <LCanvas>
-      <ScrollControls pages={9}>
-        <GGrip/>
-        <Scroll/>
-        <Scroll html>
-          <HTMLContent/>
-        </Scroll>
-      </ScrollControls>
-    </LCanvas>
+
+    <HTMLContent/>
+
   </> )
 }
 
