@@ -5,7 +5,7 @@ export default function NavBar () {
   return (
     <div className="max-w-5xl mx-auto px-4 py-4  flex justify-between">
       <div className="flex flex-col justify-around">
-        <Image src="/img/logo.jpg" alt="Logo" width={54} height={20}/>
+        <Image src="/img/logo_small.svg" alt="Logo" width={54} height={20}/>
       </div>
       <div className="hidden md:block">
         <Link href="/src/index.js#overview" className="mx-8">

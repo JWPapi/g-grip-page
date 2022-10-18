@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Footer from "./Footer";
 
-export default function HTMLContent() {
+export default function HTMLContent () {
   return (
     <div className="absolute top-0 left-0   w-screen h-screen">
       <main>
-        <h1>The G-Grip</h1>
+        <div className="flex justify-center">
+          <Image  src="/img/logo_big.svg" alt="G-Grip Logo" width={283} height={104}/>
+        </div>
         <div id="canvas"/>
         <section className="mb-16 md:mb-32" id="overview">
           <h2>Hold your phone like a camera</h2>
@@ -13,21 +15,16 @@ export default function HTMLContent() {
             <div>
               <h5>Universally Compatible</h5>
               <ul>
-                <li>Shutter/grip works with iPhone and Android</li>
-                <li>Slides off when not in use</li>
-                <li>Superfast Bluetooth® connection</li>
-                <li>USB-C rechargeable</li>
+                <li>Shutter/grip works with iPhone and Android.</li>
+                <li>Slides off when not in use.</li>
+                <li>Superfast Bluetooth® connection.</li>
+                <li>USB-C rechargeable.</li>
               </ul>
             </div>
             <div className="mt-4 md:mt-0">
               <p>
                 A Bluetooth® shutter in an ergonomically designed grip that enables you to hold and shoot one-handed
                 like a traditional camera.
-              </p>
-              <br/>
-              <p>
-                Works with iPhone and AndroidSlides off when not in use, superfast Bluetooth® connection, USB-C
-                rechargeable
               </p>
             </div>
           </div>
@@ -88,10 +85,10 @@ export default function HTMLContent() {
         <section id="about">
           <h2>About</h2>
           <div className="mb-8">
-            <Image src={"/img/greg_holding_ggrip.jpg"}
+            <Image src={"/img/greg-williams-g-grip-on-iphone-col.jpg"}
                    alt="greg"
-                   width={1024}
-                   height={600}/>
+                   width={2400}
+                   height={1600}/>
           </div>
           <div className="c-grid-2 px-4 xl:px-0">
             <div>
@@ -109,7 +106,7 @@ export default function HTMLContent() {
           <h2 className="mt-64 max-w-sm mx-auto">
             Battery life 20 hours in use and 4,000 hours on standby.
           </h2>
-          <div className="text-uxl text-center mt-28 mb-64">20</div>
+          <div className="text-uxl text-center mt-28 mb-64 tracking-tighter">20</div>
           <video autoPlay muted className="hidden md:block mb-8">
             <source src="/videos/rotating_ggrip.mp4" type="video/mp4"/>
           </video>
@@ -119,8 +116,8 @@ export default function HTMLContent() {
               <h5>Usage</h5>
               <ul>
                 <li>Transition frequency 2.4000GHz - 2.4835GHz.</li>
-                <li>Communication distance 10m (30ft)</li>
-                <li>Battery life 20 hours in use and 4,000 hours on standby</li>
+                <li>Communication distance 10m (30ft).</li>
+                <li>Battery life 20 hours in use and 4,000 hours on standby.</li>
               </ul>
             </div>
             <div>
@@ -135,7 +132,7 @@ export default function HTMLContent() {
             </div>
           </div>
         </section>
-        <section className="mt-32 md:mt-64">
+        <section className="mt-16 md:mt-32">
           <h2>Special Introductory Price </h2>
           <div className="text-9xl text-center mb-4 -mt-4">£39</div>
           <div className="text-center mb-32 ">
