@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+//ToDo: logo should be bigger?
 export default function NavBar () {
   return (
     <div className="max-w-5xl mx-auto px-4 py-4  flex justify-between">

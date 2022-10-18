@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Footer from "./Footer";
 
+//ToDo: Add by Greg Williams
+//ToDo: Follow up to get Rendering
+//ToDo: Page stays the same and only the g-grip is rotaing
 export default function HTMLContent () {
   return (
     <div className="absolute top-0 left-0   w-screen h-screen">
       <main>
         <div className="flex justify-center">
-          <Image  src="/img/logo_big.svg" alt="G-Grip Logo" width={283} height={104}/>
+          <Image src="/img/logo_big.svg" alt="G-Grip Logo" width={567} height={209}/>
         </div>
         <div id="canvas"/>
         <section className="mb-16 md:mb-32" id="overview">
@@ -41,7 +44,7 @@ export default function HTMLContent () {
             to smooth, non-textured, non-porous, flat surfaces. They will not adhere to
             rubber, matte glass, silicon, TPU or soft touch coatings.
           </p>
-          <video className="mb-4" width="100%" height="auto" autoPlay muted>
+          <video className="mb-8" width="100%" height="auto" autoPlay muted>
             <source src="/videos/attaching_ggrip.mp4" type="video/mp4"/>
           </video>
           <div className="c-grid-2 px-4 xl:px-0">
@@ -99,17 +102,15 @@ export default function HTMLContent () {
               </p>
             </div>
             <p className="mt-4 md:mt-0">
-              Greg says... <br/><br/> “I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
-              it like a traditional camera.”
+              Greg says... <br/><br/>
+              <span className="italic"> I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
+                                                                it like a traditional camera.</span>
             </p>
           </div>
-          <h2 className="mt-64 max-w-sm mx-auto">
-            Battery life 20 hours in use and 4,000 hours on standby.
+          <h2 className="mt-32 md:mt-64 max-w-sm mx-auto">
+            Battery life 20 hours in use <br/> and 4,000 hours on standby.
           </h2>
-          <div className="text-uxl text-center mt-28 mb-64 tracking-tighter">20</div>
-          <video autoPlay muted className="hidden md:block mb-8">
-            <source src="/videos/rotating_ggrip.mp4" type="video/mp4"/>
-          </video>
+          <div className="text-uxl text-center mt-16 mb-64 tracking-tighter">20</div>
           <h2 id="techSpecs">Technical Specifications</h2>
           <div className="c-grid-2 mb-16 px-4 md:p-0">
             <div>
