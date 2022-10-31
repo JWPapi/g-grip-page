@@ -10,13 +10,13 @@ export default function NavBar () {
           <Image src="/img/logo_small.svg" alt="Logo" width={54} height={20}/>
         </div>
         <div className="hidden md:block">
-          <Link href="/src/index.js#overview" className="mx-8">
+          <Link href="/#overview" className="mx-8">
             <a className=" hover:text-gray-900 mx-2">Overview</a>
           </Link>
-          <Link href="/src/index.js#about">
+          <Link href="/#about">
             <a className=" hover:text-gray-900 mx-2">About</a>
           </Link>
-          <Link href="/src/index.js#techspecs">
+          <Link href="/#techspecs">
             <a className=" hover:text-gray-900 mx-2 text-body font-body">Tech Specs</a>
           </Link>
           <a href="https://g-grip.swell.store/buy/QyQf8uwP">

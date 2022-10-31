@@ -18,7 +18,7 @@ export default function Page (props) {
             <GGrip_Scroll/>
           </div>
         </div>
-        <section className="mb-16 md:mb-32" id="overview">
+        <section className="mb-16 md:mb-32 anchor">
           <Image src={"/img/g-grip-hand-on-iphone.jpg"} alt="ggrip_holding" width={2400} height={1600}/>
           <div className="grid grid-cols-2 gap-2 md:gap-4 mt-1 md:mt-2">
             <Image src={"/img/g-grip-on-iphone.jpg"} alt="ggrip_on_iphone" width={2400} height={1600}/>
@@ -26,13 +26,13 @@ export default function Page (props) {
           </div>
         </section>
         <section className="mb-16 md:mb-32">
-          <h2>Up your Photography game</h2>
+          <h2>Improve your photography</h2>
           <p className="md:w-1/2 mb-8 px-4 xl:px-0">
             G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will adhere
-            to smooth, non-textured, non-porous, flat surfaces. They will not adhere to
-            rubber, matte glass, silicon, TPU or soft touch coatings.
+            to smooth, non-textured, non-porous, flat surfaces. We recommend a hard plastic or leather case for the
+            best result. They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.
           </p>
-          <video className="mb-8" width="100%" height="auto" autoPlay muted>
+          <video className="mb-8" width="100%" height="auto" autoPlay muted loop>
             <source src="/videos/attaching_ggrip.mp4" type="video/mp4"/>
           </video>
           <div className="c-grid-2 px-4 xl:px-0">
@@ -73,7 +73,7 @@ export default function Page (props) {
             </div>
           </div>
         </section>
-        <section id="about">
+        <section id="about" className="anchor">
           <h2>About</h2>
           <div className="mb-8">
             <Image src={"/img/greg-williams-g-grip-on-iphone-col.jpg"} alt="greg" width={2400} height={1600}/>
@@ -83,20 +83,20 @@ export default function Page (props) {
               <h5>Greg Williams</h5>
               <p>
                 One of the most trusted photographers in entertainment.<br/><br/> Greg has always loved shooting on
-                his phone but missed the ergonomic grip and shutter of a camera – hence designing the G-Grip.
+                his phone but missed the ergonomic grip and shutter of a camera – hence designing the&nbsp;G-Grip.
               </p>
             </div>
             <p className="mt-4 md:mt-0">
               Greg says... <br/><br/>
               <span className="italic"> I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
-                                                                it like a traditional camera.</span>
+                                        it like a traditional&nbsp;camera.</span>
             </p>
           </div>
-          <h2 className="mt-20 md:mt-64 max-w-sm mx-auto text-center">
+          <h2 className="mt-16 max-w-sm mx-auto text-center">
             Battery life 20 hours in use <br/> and 4,000 hours on standby.
           </h2>
-          <div className="text-uxl text-center -mt-6 mb-2 tracking-tighter line-height leading-none">20</div>
-          <h2 id="techSpecs">Technical Specifications</h2>
+          <div className="text-uxl text-center -mt-6 mb-16 tracking-tighter line-height leading-none">20</div>
+          <h2 id="techspecs" className="anchor">Technical Specifications</h2>
           <div className="c-grid-2 mb-16 px-4 md:p-0">
             <div>
               <h5>Usage</h5>

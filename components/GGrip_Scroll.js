@@ -17,9 +17,15 @@ export default function GGrip_Scroll () {
   return (
     <div id="frames" className="-mt-2 md:-mt-8 mb-8" >
         <img src={frame} width="640" className="mx-auto"/>
-      <h2 className="px-0">Hold your phone like a camera</h2>
+      <h2 id="overview" className="px-0 anchor">Hold your phone like a camera</h2>
       <div className="c-grid-2 lg:px-0">
         <div>
+          <p>
+            A Bluetooth® shutter button in an ergonomically designed grip that enables you to hold and shoot one-handed
+            like a traditional&nbsp;camera.
+          </p>
+        </div>
+        <div className="mt-4 md:mt-0">
           <h5>Universally Compatible</h5>
           <ul>
             <li>Shutter/grip works with iPhone and Android.</li>
@@ -28,12 +34,7 @@ export default function GGrip_Scroll () {
             <li>USB-C rechargeable.</li>
           </ul>
         </div>
-        <div className="mt-4 md:mt-0">
-          <p>
-            A Bluetooth® shutter in an ergonomically designed grip that enables you to hold and shoot one-handed
-            like a traditional camera.
-          </p>
-        </div>
+
       </div>
     </div> )
 }
