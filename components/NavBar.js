@@ -7,7 +7,7 @@ export default function NavBar () {
     <div className="fixed w-full h-16 bg-white z-20">
       <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between">
         <div className="flex flex-col justify-around">
-          <Image src="/img/logo_small.svg" alt="Logo" width={54} height={20}/>
+          <Image src="/img/logo_small.svg" alt="Logo" width={81} height={30}/>
         </div>
         <div className="hidden md:block">
           <Link href="/#overview" className="mx-8">

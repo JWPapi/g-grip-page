@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontSize: {
         'uxl': '14rem',
+      },
+      colors: {
+        'primary': '#e30613',
       }
     },
     fontFamily: {

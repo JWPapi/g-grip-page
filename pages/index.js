@@ -13,13 +13,12 @@ export default function Page (props) {
       <main>
         <div style={{height: '180vh'}}>
           <div className="sticky top-24 flex flex-col justify-center px-4">
-            <Image src="/img/logo_big.svg" alt="G-Grip Logo" width={567} height={209}/>
-            <h2 className="font-normal text-center">by Greg Williams</h2>
+            <Image src="/img/logo_big_red.svg" alt="G-Grip Logo" width={567} height={209}/>
             <GGrip_Scroll/>
           </div>
         </div>
         <section className="mb-16 md:mb-32 anchor">
-          <Image src={"/img/g-grip-hand-on-iphone.jpg"} alt="ggrip_holding" width={2400} height={1600}/>
+          <Image src={"/img/g-grip-hand-on-iphone.jpg?v=2"} alt="ggrip_holding" width={2400} height={1600}/>
           <div className="grid grid-cols-2 gap-2 md:gap-4 mt-1 md:mt-2">
             <Image src={"/img/g-grip-on-iphone.jpg"} alt="ggrip_on_iphone" width={2400} height={1600}/>
             <Image src={"/img/g-grip-fitting-to-iphone.jpg"} alt="ggrip_attaching" width={2400} height={1600}/>
