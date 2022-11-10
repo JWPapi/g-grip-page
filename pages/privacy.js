@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 export default function Privacy () {
   return (
-    <>
+    <div className="pt-16">
       <article className="mx-auto prose my-16">
           <h1>Privacy</h1>
           <p>
@@ -93,7 +93,7 @@ export default function Privacy () {
           <p> Last updated: December 2020</p>
       </article>
       <Footer/>
-    </>
+    </div>
   );
 }
 

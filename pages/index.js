@@ -147,7 +147,7 @@ export default function Page(props) {
 
             </div>
             <div>
-              <h5>Shooting photos</h5>
+              <h5 className="mt-4 md:mt-0">Shooting photos</h5>
               <ul>
                 <li>Select Photo mode on your device.</li>
                 <li>Press shutter once for single picture.</li>
@@ -165,7 +165,7 @@ export default function Page(props) {
               <ul>
                 <li>The device will go into automatic standby mode after 4 minutes of inactivity.</li>
               </ul>
-              <small className="mt-6 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch coatings. </small>
+              <small className="mt-6 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.</small>
             </div>
           </div>
         </section>

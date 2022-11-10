@@ -2,7 +2,7 @@ import Footer from "@/../../components/Footer";
 
 export default function Shipping () {
   return (
-    <>
+    <div className="pt-16">
       <article className="mx-auto prose my-16">
         <h1>Shipping & Delivery</h1>
         <p>
@@ -95,7 +95,7 @@ export default function Shipping () {
 
       </article>
       <Footer />
-    </>
+    </div>
   )
 
 }
