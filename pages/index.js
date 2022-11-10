@@ -10,7 +10,7 @@ export default function Page(props) {
     <div className="absolute w-screen">
       <main>
         <div>
-          <div className="top-24 flex flex-col justify-center px-4">
+          <div className="top-24 flex flex-col justify-center px-4 pt-4">
             <Image src="/img/logo_big_red.svg"
               alt="G-Grip Logo"
               width={567}
@@ -18,31 +18,34 @@ export default function Page(props) {
 
           </div>
           <div className="my-8">
-            <div className="mb-16 mt-8">
+            <div className="mb-8 md:mb-16 mt-8">
               <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
-              width="1024"
-              height="576"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen></iframe>
+                width="1024"
+                style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
+                height="576"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen></iframe>
             </div>
-            <h2 id="overview"
-              className="px-0 anchor">Hold your phone like a camera</h2>
-            <div className="c-grid-2 lg:px-0">
-              <div>
-                <h5>Universally Compatible</h5>
-                <ul>
-                  <li>Shutter/grip works with iPhone and Android.</li>
-                  <li>Slides off when not in use.</li>
-                  <li>Superfast Bluetooth® connection.</li>
-                  <li>USB-C rechargeable.</li>
-                </ul>
+            <div className="px-4 md:px-0">
+              <h2 id="overview"
+                className="px-0 anchor">Hold your phone like a camera</h2>
+              <div className="c-grid-2 lg:px-0">
+                <div>
+                  <h5>Universally compatible</h5>
+                  <ul>
+                    <li>Shutter/grip works with iPhone and Android.</li>
+                    <li>Slides off when not in use.</li>
+                    <li>Superfast Bluetooth® connection.</li>
+                    <li>USB-C rechargeable.</li>
+                  </ul>
 
-              </div>
-              <div className="mt-4 md:mt-0">
-                <p>
-                  A Bluetooth® shutter button in an ergonomically designed grip that enables you to hold and shoot one-handed like a traditional&nbsp;camera.
-                </p>
+                </div>
+                <div className="mt-4 md:mt-0">
+                  <p>
+                    A Bluetooth® shutter button in an ergonomically designed grip that enables you to hold and shoot one-handed like a traditional&nbsp;camera.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -69,6 +72,7 @@ export default function Page(props) {
             <iframe title="vimeo-player"
               src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
               width="1024"
+              style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
               height="576"
               frameBorder="0"
               allowFullScreen/>
@@ -81,12 +85,13 @@ export default function Page(props) {
             </a>
           </div>
         </section>
-        <section className="mb-12">
-          <h2>Getting Started with the G-Grip</h2>
+        <section className="mb-4 md:mb-12">
+          <h2>Getting started with the G-Grip</h2>
           <div className="mt-4 mb-8">
             <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
               width="1024"
               height="576"
+              style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen></iframe>
@@ -96,9 +101,7 @@ export default function Page(props) {
           <div className="c-grid-2 px-4 xl:px-0">
             <div>
               <h5>Attaching the G-Grip plate to your phone</h5>
-              <p>
-                G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will adhere to smooth, non-textured, non-porous, flat surfaces. We recommend a hard plastic or leather case for the best result. They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.
-              </p>
+              <p>G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will adhere to smooth, non-textured, non-porous, flat surfaces. We recommend a hard plastic or leather case.* Position the plate using the guide supplied, leave for 24hrs to harden fully before attaching the G-Grip.</p>
               <h5 className="mt-4">Turning on</h5>
               <ul>
                 <li>Press and hold for 3 seconds.</li>
@@ -110,16 +113,16 @@ export default function Page(props) {
                 <li>Add Bluetooth® device in phone settings.</li>
                 <li>Select ‘GGrip’ from the list of available devices.</li>
               </ul>
-              <h5 className="mt-4">Shooting photos</h5>
+
+            </div>
+            <div>
+              <h5>Shooting photos</h5>
               <ul>
                 <li>Select Photo mode on your device.</li>
                 <li>Press shutter once for single picture.</li>
-                <li>Add Bluetooth® device in phone settings.</li>
                 <li>For Burst mode, press and hold (for up to 3 minutes).</li>
               </ul>
-            </div>
-            <div>
-              <p>
+              <p className="mt-4">
                 Note: To configure Burst mode on iPhone, go to Settings &gt; Camera and enable the option to ‘Use Volume Up for Burst’.
               </p>
               <h5 className="mt-4">Shooting videos</h5>
@@ -131,6 +134,7 @@ export default function Page(props) {
               <ul>
                 <li>The device will go into automatic standby mode after 4 minutes of inactivity.</li>
               </ul>
+              <small className="mt-6 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch coatings. </small>
             </div>
           </div>
         </section>
@@ -160,7 +164,7 @@ export default function Page(props) {
             Battery life 20 hours in use <br/> and 4,000 hours on standby. </h2>
           <div className="text-uxl text-center -mt-6 mb-16 tracking-tighter line-height leading-none">20</div>
           <h2 id="techspecs"
-            className="anchor">Technical Specifications</h2>
+            className="anchor">Technical specifications</h2>
           <div className="c-grid-2 mb-16 px-4 md:p-0">
             <div>
               <h5>Usage</h5>
