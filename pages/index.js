@@ -20,10 +20,11 @@ export default function Page(props) {
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
               <div className="md:hidden">
-                <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
+                <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1&background=1"
                   width="1024"
                   style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
                   height="576"
+                  muted
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen></iframe>
@@ -31,6 +32,7 @@ export default function Page(props) {
               <div className="hidden md:block">
                 <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
                   width="1024"
+                  muted
                   height="576"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
