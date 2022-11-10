@@ -19,13 +19,24 @@ export default function Page(props) {
           </div>
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
-              <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
-                width="1024"
-                style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
-                height="576"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen></iframe>
+              <div className="md:hidden">
+                <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
+                  width="1024"
+                  style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
+                  height="576"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen></iframe>
+              </div>
+              <div className="hidden md:block">
+                <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
+                  width="1024"
+                  height="576"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen></iframe>
+              </div>
+
             </div>
             <div className="px-4 md:px-0">
               <h2 id="overview"
@@ -69,13 +80,23 @@ export default function Page(props) {
         <section className="mb-12">
           <h2>The G-Grip in action</h2>
           <div className="mt-4 mb-8">
-            <iframe title="vimeo-player"
-              src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
-              width="1024"
-              style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
-              height="576"
-              frameBorder="0"
-              allowFullScreen/>
+            <div className="md:hidden">
+              <iframe title="vimeo-player"
+                src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
+                width="1024"
+                style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
+                height="576"
+                frameBorder="0"
+                allowFullScreen/>
+            </div>
+            <div className="hidden md:block">
+              <iframe title="vimeo-player"
+                src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
+                width="1024"
+                height="576"
+                frameBorder="0"
+                allowFullScreen/>
+            </div>
           </div>
           <div className="text-center ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
@@ -88,13 +109,23 @@ export default function Page(props) {
         <section className="mb-4 md:mb-12">
           <h2>Getting started with the G-Grip</h2>
           <div className="mt-4 mb-8">
-            <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
-              width="1024"
-              height="576"
-              style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen></iframe>
+            <div className="md:hidden">
+              <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
+                width="1024"
+                height="576"
+                style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen></iframe>
+            </div>
+            <div className="hidden md:block">
+              <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
+                width="1024"
+                height="576"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen></iframe>
+            </div>
           </div>
         </section>
         <section className="mb-16 md:mb-32">
