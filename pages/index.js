@@ -2,6 +2,7 @@ import Head from "next/head"
 import Image from "next/image"
 import Footer from "../components/Footer"
 // ToDo: Separate in smaller components
+// ToDo: Smaller version of video for mobile
 export default function Page(props) {
   return (<>
     <Head>
@@ -19,19 +20,13 @@ export default function Page(props) {
           </div>
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
-              <div className="md:hidden">
-
-              </div>
-              <div className="hidden md:block">
-                <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
-                  width="1024"
-                  muted
-                  height="576"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen></iframe>
-              </div>
-
+              <video autoPlay
+                muted
+                playsInline
+                loop>
+                <source src="/videos/the_intro_video"
+                  type="video/mp4"/>
+              </video>
             </div>
             <div className="px-4 md:px-0">
               <h2 id="overview"
@@ -77,7 +72,7 @@ export default function Page(props) {
           <div className="mt-4 mb-8">
             <div className="md:hidden">
               <iframe title="vimeo-player"
-                src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
+                src="https://player.vimeo.com/video/769852250?h=ee01237e03&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
                 width="1024"
                 style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
                 height="576"
@@ -89,7 +84,7 @@ export default function Page(props) {
             </div>
             <div className="hidden md:block">
               <iframe title="vimeo-player"
-                src="https://player.vimeo.com/video/768588468?h=c4896af679&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
+                src="https://player.vimeo.com/video/769852250?h=ee01237e03&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
                 width="1024"
                 height="576"
                 frameBorder="0"
@@ -140,7 +135,8 @@ export default function Page(props) {
                 <span className="italic"> I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
                                         it like a traditional&nbsp;camera.</span>
               </p>
-              <p className="mt-4">Follow Greg on <a className="text-neutral-400" href="https://www.instagram.com/gregwilliamsphotography/">Instagram</a></p>
+              <p className="mt-4">Follow Greg on <a className="text-neutral-400"
+                href="https://www.instagram.com/gregwilliamsphotography/">Instagram</a></p>
             </div>
           </div>
           <h2>Getting started with the G-Grip</h2>
@@ -186,7 +182,6 @@ export default function Page(props) {
         </section>
         <section id="about"
           className="anchor">
-
 
           <h2 className="mt-16 max-w-sm mx-auto text-center">
             Battery life 20 hours in use <br/> and 4,000 hours on standby. </h2>
