@@ -168,6 +168,7 @@ export default function Page(props) {
               <h5 className="mt-4">Turning on</h5>
               <ul>
                 <li>Press and hold for 3 seconds.</li>
+                <li>Once connected hold shutter for one second to wake up your G-Grip</li>
               </ul>
               <h5 className="mt-4">Pairing G-Grip</h5>
               <ul>
