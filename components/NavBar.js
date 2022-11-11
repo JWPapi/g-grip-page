@@ -11,7 +11,7 @@ export default function NavBar () {
         </div>
         <a href="https://g-grip.swell.store/buy/QyQf8uwP">
           <button className="px-4 py-2 mx-2">
-            Pre-Order Now
+            Pre-order now
           </button>
         </a>
         <div className="hidden md:block">

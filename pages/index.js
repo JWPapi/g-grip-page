@@ -12,7 +12,7 @@ export default function Page(props) {
     <div className="absolute w-screen">
       <main>
         <div>
-          <div className="top-24 flex flex-col justify-center px-4 pt-4">
+          <div className="flex flex-col justify-center px-4 pt-8">
             <Image src="/img/logo_big_red.svg"
               alt="G-Grip Logo"
               width={567}
@@ -53,7 +53,7 @@ export default function Page(props) {
           </div>
 
         </div>
-        <section className="mb-16 md:mb-32 anchor">
+        <section className="mb-8 md:mb-16 anchor">
           <Image src={"/img/g-grip-hand-on-iphone.jpg?v=2"}
             alt="ggrip_holding"
             width={2400}
@@ -68,6 +68,7 @@ export default function Page(props) {
             height={1600}/>
           </div>
         </section>
+
         <section className="mb-12">
           <h2>The G-Grip in action</h2>
           <div className="mt-4 mb-8">
@@ -79,16 +80,19 @@ export default function Page(props) {
                 type="video/mp4"/>
             </video>
           </div>
-          <div className="text-center ">
+        </section>
+        <section className="mt-16 md:mt-32">
+          <h2 className="text-center">Get it by 25 Nov</h2>
+          <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">£49</div>
+          <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
               <button className="text-2xl px-8 py-4">
-                Pre-Order Now
+                Pre-order now
               </button>
             </a>
           </div>
         </section>
-        <section className="mb-4 md:mb-12 anchor"
-          id="about">
+        <section className="mb-4 md:mb-12 anchor" id="about">
           <h2>Unboxing</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
@@ -203,7 +207,7 @@ export default function Page(props) {
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
               <button className="text-2xl px-8 py-4">
-                Pre-Order Now
+                Pre-order now
               </button>
             </a>
           </div>
