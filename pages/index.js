@@ -81,8 +81,8 @@ export default function Page(props) {
           </div>
           <div className="text-center ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
-              <button className="text-4xl px-8 py-4">
-                Buy
+              <button className="text-2xl px-8 py-4">
+                Pre-Order Now
               </button>
             </a>
           </div>
@@ -146,7 +146,7 @@ export default function Page(props) {
                 <li>Battery life 20 hours in use and 4,000 hours on standby.</li>
               </ul>
             </div>
-            <div>
+            <div className="mt-4 md:mt-0">
               <h5>Dimensions</h5>
               <ul>
                 <li>iPhone with iOS 6 and above.</li>
@@ -198,12 +198,12 @@ export default function Page(props) {
           </div>
         </section>
         <section className="mt-16 md:mt-32">
-          <h2 className="text-center">Pre-Order Now (get on the 25th)</h2>
+          <h2 className="text-center">Get it by 25 Nov</h2>
           <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">£49</div>
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
-              <button className="text-4xl px-8 py-4">
-                Buy
+              <button className="text-2xl px-8 py-4">
+                Pre-Order Now
               </button>
             </a>
           </div>
