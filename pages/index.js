@@ -87,6 +87,9 @@ export default function Page(props) {
                 width="1024"
                 style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
                 height="576"
+                playsInline
+                muted
+                autoPlay
                 frameBorder="0"
                 allowFullScreen/>
             </div>
