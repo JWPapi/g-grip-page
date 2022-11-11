@@ -87,7 +87,8 @@ export default function Page(props) {
             </a>
           </div>
         </section>
-        <section className="mb-4 md:mb-12">
+        <section className="mb-4 md:mb-12 anchor"
+          id="about">
           <h2>Unboxing</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
@@ -125,6 +126,34 @@ export default function Page(props) {
               </p>
               <p className="mt-4">Follow Greg on <a className="text-neutral-400"
                 href="https://www.instagram.com/gregwilliamsphotography/">Instagram</a></p>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <h2 className="mt-16 max-w-sm mx-auto text-center">
+            Battery life 20 hours in use <br/> and 4,000 hours on standby. </h2>
+            <div className="text-uxl text-center -mt-6 tracking-tighter line-height leading-none">20</div>
+            <div className="text-6xl text-center -mt-4 mb-16">hours</div>
+          <h2 id="techspecs"
+            className="anchor">Technical specifications</h2>
+          <div className="c-grid-2 mb-16 px-4 md:p-0">
+            <div>
+              <h5>Usage</h5>
+              <ul>
+                <li>Transition frequency 2.4000GHz - 2.4835GHz.</li>
+                <li>Communication distance 10m (30ft).</li>
+                <li>Battery life 20 hours in use and 4,000 hours on standby.</li>
+              </ul>
+            </div>
+            <div>
+              <h5>Dimensions</h5>
+              <ul>
+                <li>iPhone with iOS 6 and above.</li>
+                <li>Android OS 4.2 and above.</li>
+                <li>Compatible devices require Bluetooth® 4.0+ support and use of side volume key as the shutter button.
+                </li>
+              </ul>
             </div>
           </div>
           <h2>Getting started with the G-Grip</h2>
@@ -165,34 +194,6 @@ export default function Page(props) {
                 <li>The device will go into automatic standby mode after 4 minutes of inactivity.</li>
               </ul>
               <small className="mt-6 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.</small>
-            </div>
-          </div>
-        </section>
-        <section id="about"
-          className="anchor">
-
-          <h2 className="mt-16 max-w-sm mx-auto text-center">
-            Battery life 20 hours in use <br/> and 4,000 hours on standby. </h2>
-          <div className="text-uxl text-center -mt-6 mb-16 tracking-tighter line-height leading-none">20</div>
-          <h2 id="techspecs"
-            className="anchor">Technical specifications</h2>
-          <div className="c-grid-2 mb-16 px-4 md:p-0">
-            <div>
-              <h5>Usage</h5>
-              <ul>
-                <li>Transition frequency 2.4000GHz - 2.4835GHz.</li>
-                <li>Communication distance 10m (30ft).</li>
-                <li>Battery life 20 hours in use and 4,000 hours on standby.</li>
-              </ul>
-            </div>
-            <div>
-              <h5>Dimensions</h5>
-              <ul>
-                <li>iPhone with iOS 6 and above.</li>
-                <li>Android OS 4.2 and above.</li>
-                <li>Compatible devices require Bluetooth® 4.0+ support and use of side volume key as the shutter button.
-                </li>
-              </ul>
             </div>
           </div>
         </section>
