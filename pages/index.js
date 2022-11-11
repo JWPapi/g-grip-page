@@ -20,13 +20,7 @@ export default function Page(props) {
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
               <div className="md:hidden">
-                <video autoPlay
-                  muted
-                  playsInline
-                  loop>
-                  <source src="/videos/introVideo_v2.mp4?v=2"
-                    type="video/mp4"/>
-                </video>
+
               </div>
               <div className="hidden md:block">
                 <iframe src="https://player.vimeo.com/video/769553282?h=bbe71b3a1d&autoplay=1&muted=1&loop=1"
