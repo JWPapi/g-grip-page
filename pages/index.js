@@ -90,6 +90,7 @@ export default function Page(props) {
                 Pre-order now
               </button>
             </a>
+            <div className="mt-4">Free worldwide shipping • 30 day no risk return </div>
           </div>
         </section>
         <section className="mb-4 md:mb-12 anchor" id="about">
