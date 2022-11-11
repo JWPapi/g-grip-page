@@ -24,7 +24,7 @@ export default function Page(props) {
                   muted
                   playsInline
                   loop>
-                  <source src="/videos/introVideo.mp4"
+                  <source src="/videos/introVideo_v2.mp4?v=2"
                     type="video/mp4"/>
                 </video>
               </div>
@@ -111,7 +111,7 @@ export default function Page(props) {
           </div>
         </section>
         <section className="mb-4 md:mb-12">
-          <h2>Getting started with the G-Grip</h2>
+          <h2>About</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
               <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
@@ -133,6 +133,23 @@ export default function Page(props) {
           </div>
         </section>
         <section className="mb-16 md:mb-32">
+          <div className="c-grid-2 px-4 xl:px-0 mb-16">
+            <div>
+              <h5>Greg Williams</h5>
+              <p>
+                One of the most trusted photographers in entertainment.<br/><br/> Greg has always loved shooting on his phone but missed the ergonomic grip and shutter of a camera – hence designing the&nbsp;G-Grip.
+              </p>
+            </div>
+            <div>
+              <p className="mt-4 md:mt-0">
+                Greg says... <br/><br/>
+                <span className="italic"> I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
+                                        it like a traditional&nbsp;camera.</span>
+              </p>
+              <p className="mt-4">Follow Greg on <a className="text-neutral-400" href="https://www.instagram.com/gregwilliamsphotography/">Instagram</a></p>
+            </div>
+          </div>
+          <h2>Getting started with the G-Grip</h2>
           <div className="c-grid-2 px-4 xl:px-0">
             <div>
               <h5>Attaching the G-Grip plate to your phone</h5>
@@ -175,29 +192,8 @@ export default function Page(props) {
         </section>
         <section id="about"
           className="anchor">
-          <h2>About</h2>
-          <div className="mb-8">
-            <Image src={"/img/greg-williams-g-grip-on-iphone-col.jpg"}
-              alt="greg"
-              width={2400}
-              height={1600}/>
-          </div>
-          <div className="c-grid-2 px-4 xl:px-0">
-            <div>
-              <h5>Greg Williams</h5>
-              <p>
-                One of the most trusted photographers in entertainment.<br/><br/> Greg has always loved shooting on his phone but missed the ergonomic grip and shutter of a camera – hence designing the&nbsp;G-Grip.
-              </p>
-            </div>
-            <div>
-            <p className="mt-4 md:mt-0">
-              Greg says... <br/><br/>
-              <span className="italic"> I shoot pictures on my phone everyday. I invented the G-Grip so I can operate
-                                        it like a traditional&nbsp;camera.</span>
-            </p>
-              <p className="mt-4">Follow Greg on <a className="text-neutral-400" href="https://www.instagram.com/gregwilliamsphotography/">Instagram</a></p>
-            </div>
-          </div>
+
+
           <h2 className="mt-16 max-w-sm mx-auto text-center">
             Battery life 20 hours in use <br/> and 4,000 hours on standby. </h2>
           <div className="text-uxl text-center -mt-6 mb-16 tracking-tighter line-height leading-none">20</div>
