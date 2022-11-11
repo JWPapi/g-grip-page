@@ -10,7 +10,7 @@ export default function NavBar () {
           <Image src="/img/logo_small.svg" alt="Logo" width={81} height={30}/>
         </div>
         <a href="https://g-grip.swell.store/buy/QyQf8uwP">
-          <button className="px-4 py-2 mx-2">
+          <button className="px-4 py-2 mx-2 md:hidden">
             Pre-order now
           </button>
         </a>
@@ -26,7 +26,7 @@ export default function NavBar () {
           </Link>
           <a href="https://g-grip.swell.store/buy/QyQf8uwP">
             <button className="px-4 py-2 mx-2">
-              Buy
+              Pre-order now
             </button>
           </a>
         </div>
