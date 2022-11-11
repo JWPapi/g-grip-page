@@ -22,6 +22,7 @@ export default function Page(props) {
               <div className="md:hidden">
                 <video autoPlay
                   muted
+                  playsInline
                   loop>
                   <source src="/videos/introVideo.mp4"
                     type="video/mp4"/>
