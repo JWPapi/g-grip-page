@@ -25,7 +25,7 @@ export default function Page(props) {
                 muted
                 playsInline
                 loop>
-                <source src="/videos/the_intro_video"
+                <source src="/videos/introVideo.mp4"
                   type="video/mp4"/>
               </video>
             </div>
@@ -210,6 +210,7 @@ export default function Page(props) {
                 Pre-order now
               </button>
             </a>
+            <div className="mt-4">Free worldwide shipping • 30 day no risk return </div>
           </div>
         </section>
         <section>
