@@ -166,7 +166,7 @@ export default function Page(props) {
               <h5>Attaching the G-Grip plate to your phone</h5>
               <p>G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will adhere to smooth, non-textured, non-porous, flat surfaces. We recommend a hard plastic or leather case.* Position the plate using the guide supplied, leave for 24hrs to harden fully before attaching the G-Grip.</p>
 
-              <small className="mt-6 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.</small>
+              <small className="mt-2 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.</small>
               <h5 className="mt-4">Turning on</h5>
               <ul>
                 <li>Press and hold for 3 seconds.</li>
