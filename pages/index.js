@@ -103,7 +103,7 @@ export default function Page(props) {
           <h2>About</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
-              <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
+              <iframe src="https://player.vimeo.com/video/769619524?h=fc1cc5987c"
                 width="1024"
                 height="576"
                 style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
@@ -112,7 +112,7 @@ export default function Page(props) {
                 allowFullScreen></iframe>
             </div>
             <div className="hidden md:block">
-              <iframe src="https://player.vimeo.com/video/769449405?h=c4896af679"
+              <iframe src="https://player.vimeo.com/video/769619524?h=fc1cc5987c"
                 width="1024"
                 height="576"
                 frameBorder="0"
