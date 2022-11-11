@@ -70,26 +70,13 @@ export default function Page(props) {
         <section className="mb-12">
           <h2>The G-Grip in action</h2>
           <div className="mt-4 mb-8">
-            <div className="md:hidden">
-              <iframe title="vimeo-player"
-                src="https://player.vimeo.com/video/769852250?h=ee01237e03&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
-                width="1024"
-                style={{maxWidth: "100%",height: 'calc(100vw * 0.5625)'}}
-                height="576"
-                playsInline
-                muted
-                autoPlay
-                frameBorder="0"
-                allowFullScreen/>
-            </div>
-            <div className="hidden md:block">
-              <iframe title="vimeo-player"
-                src="https://player.vimeo.com/video/769852250?h=ee01237e03&autoplay=1&loop=1&autopause=0&muted=1&controls=0"
-                width="1024"
-                height="576"
-                frameBorder="0"
-                allowFullScreen/>
-            </div>
+            <video autoPlay
+              muted
+              playsInline
+              loop>
+              <source src="/videos/g_grip_in_action.mp4"
+                type="video/mp4"/>
+            </video>
           </div>
           <div className="text-center ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
