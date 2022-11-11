@@ -3,6 +3,7 @@ import Image from "next/image"
 import Footer from "../components/Footer"
 // ToDo: Separate in smaller components
 // ToDo: Smaller version of video for mobile
+// ToDo: Change Resolution of self-hosted videos to 1280x720
 export default function Page(props) {
   return (<>
     <Head>
@@ -87,7 +88,7 @@ export default function Page(props) {
           </div>
         </section>
         <section className="mb-4 md:mb-12">
-          <h2>About</h2>
+          <h2>Unboxing</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
               <iframe src="https://player.vimeo.com/video/769619524?h=fc1cc5987c"
