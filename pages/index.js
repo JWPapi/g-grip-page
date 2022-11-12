@@ -1,14 +1,18 @@
 import Head from "next/head"
 import Image from "next/image"
 import Footer from "../components/Footer"
+import {useRouter} from "next/router";
 // ToDo: Separate in smaller components
 // ToDo: Smaller version of video for mobile
 // ToDo: Change Resolution of self-hosted videos to 1280x720
 export default function Page(props) {
+
   return (<>
     <Head>
       <title>G–Grip by Greg Williams</title>
     </Head>
+    <script>
+    </script>
     <div className="absolute w-screen anchor" id="top" >
       <main>
         <div>
