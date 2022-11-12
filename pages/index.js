@@ -1,35 +1,18 @@
 import Head from "next/head"
 import Image from "next/image"
 import Footer from "../components/Footer"
-import {useEffect, useState} from "react";
 import swell from "swell-js"
+import NavBar from "../components/NavBar";
 swell.init('g-grip','pk_4yeESF2sYLvnuIY42XlQ6vPZJTSv6Mro')
 
 // ToDo: Separate in smaller components
-export default function Page(props) {
-  const [price, setPrice] = useState('£49')
-
-  useEffect(() => {
-    fetch('/api/getCountry').then(res => res.json()).then(async data => {
-      if (data.data.country === 'United Kingdom') {
-        await swell.currency.select('GBP')
-        return
-      }
-      if (data.data.continent === 'Europe') {
-        await swell.currency.select('EUR')
-        return setPrice('€59')
-      }
-      await swell.currency.select('USD')
-      setPrice('$59')
-    })
-  }, [])
+export default function Page({checkoutURL, price}) {
 
   return (<>
     <Head>
       <title>G–Grip by Greg Williams</title>
     </Head>
-    <script>
-    </script>
+    <NavBar checkoutURL={checkoutURL} />
     <div className="absolute w-screen anchor" id="top" >
       <main>
         <div>
@@ -61,7 +44,6 @@ export default function Page(props) {
                     <li>Superfast Bluetooth® connection.</li>
                     <li>USB-C rechargeable.</li>
                   </ul>
-
                 </div>
                 <div className="mt-4 md:mt-0">
                   <p>
@@ -105,7 +87,7 @@ export default function Page(props) {
           <h2 className="text-center">Get it by 25 Nov</h2>
           <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
-            <a href="https://g-grip.swell.store/buy/QyQf8uwP">
+            <a href={checkoutURL}>
               <button className="text-2xl px-8 py-4">
                 Pre-order now
               </button>
@@ -228,7 +210,7 @@ export default function Page(props) {
           <h2 className="text-center">Get it by 25 Nov</h2>
           <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
-            <a href="https://g-grip.swell.store/buy/QyQf8uwP">
+            <a href={checkoutURL}>
               <button className="text-2xl px-8 py-4">
                 Pre-order now
               </button>
