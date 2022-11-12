@@ -1,11 +1,18 @@
 import Head from "next/head"
 import Image from "next/image"
 import Footer from "../components/Footer"
-import {useRouter} from "next/router";
+import {useEffect, useState} from "react";
 // ToDo: Separate in smaller components
-// ToDo: Smaller version of video for mobile
-// ToDo: Change Resolution of self-hosted videos to 1280x720
 export default function Page(props) {
+  const [price, setPrice] = useState('£49')
+
+  useEffect(() => {
+    fetch('/api/getCountry').then(res => res.json()).then(data => {
+      if (data.data.country === 'United Kingdom') return
+      if (data.data.continent === 'Europe') return setPrice('€59')
+      setPrice('$59')
+    })
+  }, [])
 
   return (<>
     <Head>
@@ -86,7 +93,7 @@ export default function Page(props) {
         </section>
         <section className="mt-16 md:mt-32">
           <h2 className="text-center">Get it by 25 Nov</h2>
-          <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">£49</div>
+          <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
               <button className="text-2xl px-8 py-4">
@@ -209,7 +216,7 @@ export default function Page(props) {
         </section>
         <section className="mt-16 md:mt-32">
           <h2 className="text-center">Get it by 25 Nov</h2>
-          <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">£49</div>
+          <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
             <a href="https://g-grip.swell.store/buy/QyQf8uwP">
               <button className="text-2xl px-8 py-4">
