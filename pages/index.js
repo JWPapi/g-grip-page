@@ -2,14 +2,24 @@ import Head from "next/head"
 import Image from "next/image"
 import Footer from "../components/Footer"
 import {useEffect, useState} from "react";
+import swell from "swell-js"
+swell.init('g-grip','pk_4yeESF2sYLvnuIY42XlQ6vPZJTSv6Mro')
+
 // ToDo: Separate in smaller components
 export default function Page(props) {
   const [price, setPrice] = useState('£49')
 
   useEffect(() => {
-    fetch('/api/getCountry').then(res => res.json()).then(data => {
-      if (data.data.country === 'United Kingdom') return
-      if (data.data.continent === 'Europe') return setPrice('€59')
+    fetch('/api/getCountry').then(res => res.json()).then(async data => {
+      if (data.data.country === 'United Kingdom') {
+        await swell.currency.select('GBP')
+        return
+      }
+      if (data.data.continent === 'Europe') {
+        await swell.currency.select('EUR')
+        return setPrice('€59')
+      }
+      await swell.currency.select('USD')
       setPrice('$59')
     })
   }, [])
