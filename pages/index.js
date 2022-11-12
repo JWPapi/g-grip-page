@@ -9,7 +9,7 @@ export default function Page(props) {
     <Head>
       <title>G–Grip by Greg Williams</title>
     </Head>
-    <div className="absolute w-screen">
+    <div className="absolute w-screen anchor" id="top" >
       <main>
         <div>
           <div className="flex flex-col justify-center px-4 pt-8">
@@ -17,7 +17,6 @@ export default function Page(props) {
               alt="G-Grip Logo"
               width={567}
               height={209}/>
-
           </div>
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
