@@ -38,7 +38,7 @@
 
 
   button {
-    @apply rounded-full text-white bg-primary;
+    @apply rounded-3xl text-white bg-primary;
   }
 }
 
