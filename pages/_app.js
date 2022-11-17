@@ -29,7 +29,7 @@ function App ({Component, pageProps}) {
       router.events.on('routeChangeComplete', () => {
         ReactPixel.pageView()
       })
-      
+
     })
   }, [router.events])
 
