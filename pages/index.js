@@ -94,7 +94,7 @@ export default function Page({checkoutURL, price, freeShipping}) {
           </div>
         </section>
         <section className="mt-16 md:mt-32">
-          <h2 className="text-center">Get it by 25 Nov</h2>
+          <h2 className="text-center">Get it by 1 Dec</h2>
           <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
             <a href={checkoutURL}>
@@ -222,7 +222,7 @@ export default function Page({checkoutURL, price, freeShipping}) {
           </div>
         </section>
         <section className="mt-16 md:mt-32">
-          <h2 className="text-center">Get it by 25 Nov</h2>
+          <h2 className="text-center">Get it by 1 Dec</h2>
           <div className="text-9xl leading-none text-center mb-4 -mt-4 tracking-tighter">{price}</div>
           <div className="text-center mb-32 ">
             <a href={checkoutURL}>
