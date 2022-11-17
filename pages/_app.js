@@ -1,10 +1,8 @@
 import '../styles/index.css'
 import NavBar from "../components/NavBar";
 import {useEffect, useState} from "react";
-import {useRouter} from "next/router";
 
 function App ({Component, pageProps}) {
-  const router = useRouter()
   const [price, setPrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
   const [freeShipping, setFreeShipping] = useState(true)
@@ -22,16 +20,7 @@ function App ({Component, pageProps}) {
       if(continent !== 'North America') setFreeShipping(false)
     })
 
-    import('react-facebook-pixel').then(({default: ReactPixel}) => {
-      ReactPixel.init('979802925843640')
-      ReactPixel.pageView()
-
-      router.events.on('routeChangeComplete', () => {
-        ReactPixel.pageView()
-      })
-
-    })
-  }, [router.events])
+  }, [])
 
   return (
     <>
