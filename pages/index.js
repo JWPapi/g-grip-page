@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 
 // ToDo: Separate in smaller components
 // ToDo: Consistent margin cascading
-export default function Page({checkoutURL, price}) {
+export default function Page({checkoutURL, price, freeShipping}) {
 
   return (<>
     <Head>
@@ -102,7 +102,7 @@ export default function Page({checkoutURL, price}) {
                 Pre-order now
               </button>
             </a>
-            <div className="mt-4">Free worldwide shipping • 30 day no risk return</div>
+            {freeShipping ? <div className="mt-4">Free worldwide shipping • 30 day no risk return</div> :null}
           </div>
         </section>
         <section className="mb-4 md:mb-12 anchor" id="about">
@@ -230,7 +230,7 @@ export default function Page({checkoutURL, price}) {
                 Pre-order now
               </button>
             </a>
-            <div className="mt-4">Free worldwide shipping • 30 day no risk return</div>
+            {freeShipping ? <div className="mt-4">Free worldwide shipping • 30 day no risk return</div> :null}
           </div>
         </section>
         <section>
