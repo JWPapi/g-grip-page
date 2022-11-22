@@ -3,7 +3,8 @@ import NavBar from "../components/NavBar";
 import {useEffect, useState} from "react";
 
 function App ({Component, pageProps}) {
-  const [price, setPrice] = useState('£49')
+  const [price, setPrice] = useState('£69')
+  const [salePrice, setSalePrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
   const [freeShipping, setFreeShipping] = useState(true)
 
@@ -13,10 +14,12 @@ function App ({Component, pageProps}) {
       if (country === 'United Kingdom') return
       if (continent === 'Europe') {
         setCheckoutURL('https://g-grip.swell.store/buy/uZx7NaLM')
-        return setPrice('€59')
+        setSalePrice('€59')
+        return setPrice('€79')
       }
       setCheckoutURL('https://g-grip.swell.store/buy/asmGsHr3')
-      setPrice('$59')
+      setSalePrice('$59')
+      setPrice('$79')
       if(continent !== 'North America') setFreeShipping(false)
     })
 
@@ -27,7 +30,7 @@ function App ({Component, pageProps}) {
       <link rel="prefetch" href={checkoutURL} />
       <link rel='prerender' href={checkoutURL} />
       <NavBar checkoutURL={checkoutURL} />
-      <Component checkoutURL={checkoutURL} price={price} {...pageProps} freeShipping={freeShipping} />
+      <Component checkoutURL={checkoutURL} price={price} {...pageProps} freeShipping={freeShipping} salePrice={salePrice} />
     </>
   )
 }
