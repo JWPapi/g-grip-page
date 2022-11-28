@@ -6,6 +6,7 @@ function App ({Component, pageProps}) {
   const [price, setPrice] = useState('£69')
   const [salePrice, setSalePrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
+  const [currency, setCurrency] = useState('GBP')
   const [freeShipping, setFreeShipping] = useState(true)
 
   useEffect(() => {
@@ -15,11 +16,13 @@ function App ({Component, pageProps}) {
       if (continent === 'Europe') {
         setCheckoutURL('https://g-grip.swell.store/buy/uZx7NaLM')
         setSalePrice('€59')
+        setCurrency('EUR')
         return setPrice('€79')
       }
       setCheckoutURL('https://g-grip.swell.store/buy/asmGsHr3')
       setSalePrice('$59')
       setPrice('$79')
+      setCurrency('USD')
       if(continent !== 'North America') setFreeShipping(false)
     })
 
@@ -30,7 +33,7 @@ function App ({Component, pageProps}) {
       <link rel="prefetch" href={checkoutURL} />
       <link rel='prerender' href={checkoutURL} />
       <NavBar checkoutURL={checkoutURL} />
-      <Component checkoutURL={checkoutURL} price={price} {...pageProps} freeShipping={freeShipping} salePrice={salePrice} />
+      <Component checkoutURL={checkoutURL} price={price} {...pageProps} freeShipping={freeShipping} salePrice={salePrice} currency={currency}/>
     </>
   )
 }
