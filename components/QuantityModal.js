@@ -1,10 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function QuantityModal ({ show, currency, onBackgroundClick }) {
   const defaultLink = purchaseLinks.find((link) => link.currency === currency && link.quantity === 3)
   const [purchaseLink, setPurchaseLink] = useState(defaultLink)
 
-  //Handlers
   const onInputChange = (e) => {
     const quantity = parseInt(e.target.value) <= 10 ? parseInt(e.target.value) : 10
     const link = purchaseLinks.find((link) => link.currency === currency && link.quantity === quantity)
@@ -12,9 +11,13 @@ export default function QuantityModal ({ show, currency, onBackgroundClick }) {
   }
 
   const onBgClick = (e) => {
-    console.log(e)
     if (e.target.id === 'modal') onBackgroundClick(false)
   }
+  //update PurchaseLink on load
+ useEffect(() => {
+    const link = purchaseLinks.find((link) => link.currency === currency && link.quantity === 3)
+    setPurchaseLink(link)
+  }, [currency])
 
 
   if (!show) return null
@@ -22,9 +25,8 @@ export default function QuantityModal ({ show, currency, onBackgroundClick }) {
   return (<div className="relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
     <div className="fixed inset-0 z-10 overflow-y-auto">
-      <div
-        onClick={onBgClick} id="modal"
-        className="flex min-h-full  justify-center p-4 text-center items-center sm:p-0">
+      <div onClick={onBgClick} id="modal"
+           className="flex min-h-full  justify-center p-4 text-center items-center sm:p-0">
         <div
           className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
           <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
