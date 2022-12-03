@@ -134,10 +134,9 @@ export default function Page (props) {
               <h5>Attaching the G-Grip plate to your phone</h5>
               <p>G-Grip comes with 2 x 3M VHB single use adhesive backed plates which will adhere to smooth,
                 non-textured, non-porous, flat surfaces. We recommend a hard plastic or leather case.* </p>
-              <p className="mt-4">If you
-              experience any trouble peeling off the red backing from the adhesive plate, use a pin to edge it away.
-              Position the plate using the guide supplied, leave for 24hrs to harden fully before attaching the G-Grip.
-              Choose between landscape ot portrait&nbsp;position. </p>
+              <p className="mt-4">If you experience any trouble peeling off the red backing from the adhesive plate, use
+                a pin to edge it away. Position the plate using the guide supplied, leave for 24hrs to harden fully
+                before attaching the G-Grip. Choose between landscape ot portrait&nbsp;position. </p>
 
               <small className="mt-2 block"> * They will not adhere to rubber, matte glass, silicon, TPU or soft
                 touch&nbsp;coatings.</small>
@@ -182,6 +181,12 @@ export default function Page (props) {
           <div className="text-4xl md:text-7xl">“It’s not a gadget, it’s an&nbsp;instrument”</div>
           <div> –</div>
           <div className="italic"> Baz Luhrmann (Legendary Filmmaker)</div>
+          <div className="flex justify-center mt-32">
+            <a href="https://instagram.com/theggrip" target="_blank" rel="noreferrer">
+            <Image src={'/icons/instagram.svg'} width={64} height={64} alt="Instagram"/>
+              <div className="mt-1">Follow G-Grip on Instagram</div>
+            </a>
+          </div>
         </div>
         <section>
           <hr className="mb-2"/>
