@@ -25,8 +25,8 @@
       </formatting-settings>
     </DBN-SQL>
     <HTMLCodeStyleSettings>
-      <option name="HTML_KEEP_LINE_BREAKS" value="false" />
       <option name="HTML_KEEP_LINE_BREAKS_IN_TEXT" value="false" />
+      <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,div,p,form,h1,h2,h3,Layout" />
     </HTMLCodeStyleSettings>
     <JSCodeStyleSettings version="0">
       <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
@@ -34,14 +34,12 @@
       <option name="SPACE_BEFORE_GENERATOR_MULT" value="true" />
       <option name="USE_DOUBLE_QUOTES" value="false" />
       <option name="FORCE_QUOTE_STYlE" value="true" />
+      <option name="JSX_ATTRIBUTE_VALUE" value="Based on type" />
       <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
       <option name="SPACES_WITHIN_IMPORTS" value="true" />
     </JSCodeStyleSettings>
-    <editorconfig>
-      <option name="ENABLED" value="false" />
-    </editorconfig>
     <codeStyleSettings language="HTML">
-      <option name="WRAP_ON_TYPING" value="1" />
+      <option name="WRAP_ON_TYPING" value="0" />
       <indentOptions>
         <option name="INDENT_SIZE" value="2" />
         <option name="CONTINUATION_INDENT_SIZE" value="2" />

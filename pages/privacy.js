@@ -98,7 +98,6 @@ export default function Privacy() {
           <p> Last updated: December 2020</p>
         </article>
       </div>
-      <Footer/>
     </>
   );
 }

@@ -15,8 +15,10 @@ export default function Page (props) {
   return (<>
     <Head>
       <title>G–Grip by Greg Williams</title>
-    </Head> <NavBar checkoutURL={props.checkoutURL}/>
-    <div className="absolute w-screen anchor" id="top">
+    </Head>
+    <link rel="prefetch" href={props.checkoutURL} />
+    <link rel="prerender" href={props.checkoutURL} />
+    <div className="pt-4 md:pt-8 w-screen anchor" id="top">
       <main>
         <div>
           <div className="flex flex-col justify-center px-4 pt-8">
@@ -227,7 +229,7 @@ export default function Page (props) {
           </div>
         </section>
       </main>
-      <Footer/> <QuantityModal show={quantityModalOpen} currency={props.currency}
+       <QuantityModal show={quantityModalOpen} currency={props.currency}
                                onBackgroundClick={setQuantityModalOpen}/>
     </div>
   </>)
