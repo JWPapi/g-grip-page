@@ -17,7 +17,7 @@ export default function SkillsPromo() {
                 </h4>
                 <div className="mt-6 text-base">
                   <a
-                    href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=70off"
+                    href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=25off"
                     className="font-semibold text-white"
                   >
                     Get 25% off <span aria-hidden="true"> &rarr;</span>
