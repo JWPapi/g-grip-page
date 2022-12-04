@@ -20,8 +20,7 @@ export default function SkillsPromo() {
                     href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=70off"
                     className="font-semibold text-white"
                   >
-                    {" "}
-                    70% off full price <span aria-hidden="true"> &rarr;</span>
+                    Get 25% off <span aria-hidden="true"> &rarr;</span>
                   </a>
                 </div>
               </div>
