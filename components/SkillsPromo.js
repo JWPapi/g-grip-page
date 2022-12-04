@@ -6,16 +6,22 @@ export default function SkillsPromo() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="relative pt-48 pb-16 sm:pb-24">
               <div>
-                <h2 id="sale-heading" className="text-4xl md:text-3xl font-bold text-left tracking-tight text-white md:text-5xl px-0 md:mb-1">
+                <h2
+                  id="sale-heading"
+                  className="text-4xl md:text-3xl font-bold text-left tracking-tight text-white md:text-5xl px-0 md:mb-1"
+                >
                   Greg’s Candid Photography Skills.
                 </h2>
                 <h4 className="text-2xl md:text-xl text-white">
                   Shoot better pictures with your&nbsp;phone.
                 </h4>
-                  <div className="mt-6 text-base">
-                  <a href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D" className="font-semibold text-white">
-                    70% off full price
-                    <span aria-hidden="true"> &rarr;</span>
+                <div className="mt-6 text-base">
+                  <a
+                    href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=70off"
+                    className="font-semibold text-white"
+                  >
+                    {" "}
+                    70% off full price <span aria-hidden="true"> &rarr;</span>
                   </a>
                 </div>
               </div>
