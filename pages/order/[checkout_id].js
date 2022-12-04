@@ -7,9 +7,6 @@ import Footer from '../../components/Footer'
 export default function ThankYouPage({ order }) {
   return (
     <>
-      <pre>
-        {JSON.stringify(order, null, 2)}
-      </pre>
       <SkillsBanner />
       <SkillsPromo/>
 
