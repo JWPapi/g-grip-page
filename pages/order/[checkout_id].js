@@ -7,6 +7,9 @@ import Footer from '../../components/Footer'
 export default function ThankYouPage({ order }) {
   return (
     <>
+      <pre>
+        {JSON.stringify(order, null, 2)}
+      </pre>
       <SkillsBanner />
       <SkillsPromo/>
 
@@ -41,9 +44,10 @@ export default function ThankYouPage({ order }) {
                         <span>{item.product.name}</span>
                       </h3>
                       <p>{item.product.description}</p>
+                      <p>× {item.quantity}</p>
                     </div>
                     <p className="flex-none font-medium text-gray-900">
-                      {`${item.purchase_option.price} ${item.purchase_option.currency}`}
+                      {item.price} {order.currency}
                     </p>
                   </li>
                 ))}
@@ -63,6 +67,14 @@ export default function ThankYouPage({ order }) {
                     {order.shipping.price} {order.shipping.currency}
                   </dd>
                 </div>
+
+                {order.discount_total > 0 && (
+                <div className="flex justify-between text-primary">
+                  <dt>Discount</dt>
+                  <dd >
+                    -{order.discount_total} {order.currency}
+                  </dd>
+                </div>)}
 
                 <div className="flex items-center justify-between border-t border-gray-200 pt-6 text-gray-900">
                   <dt className="text-base">Total</dt>
