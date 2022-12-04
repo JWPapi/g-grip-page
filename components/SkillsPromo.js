@@ -8,7 +8,7 @@ export default function SkillsPromo() {
               <div>
                 <h2
                   id="sale-heading"
-                  className="text-4xl md:text-3xl font-bold text-left tracking-tight text-white md:text-5xl px-0 md:mb-1"
+                  className="text-4xl md:text-3xl font-bold text-left tracking-tight text-white px-0 md:mb-1"
                 >
                   Greg’s Candid Photography Skills.
                 </h2>
