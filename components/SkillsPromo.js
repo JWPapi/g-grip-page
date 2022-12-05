@@ -4,23 +4,25 @@ export default function SkillsPromo() {
       <div className="overflow-hidden pt-32 sm:pt-14">
         <div className="bg-black">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="relative pt-48 pb-16 sm:pb-24">
+            <div className="relative pt-48 pb-16 sm:pb-24 text-white">
               <div>
                 <h2
                   id="sale-heading"
-                  className="text-4xl md:text-3xl font-bold text-left tracking-tight text-white px-0 md:mb-1"
-                >
+                  className="text-4xl md:text-3xl font-bold text-left tracking-tight  px-0 md:mb-1">
                   Greg’s Candid Photography Skills.
                 </h2>
-                <h4 className="text-2xl md:text-xl text-white">
-                  Shoot better pictures with your&nbsp;phone.
-                </h4>
+                <h4 className="text-2xl md:text-xl ">Shoot better pictures with your&nbsp;phone.</h4>
                 <div className="mt-6 text-base">
                   <a
                     href="https://skillsfaster.com/candid-photography-skills/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=25off"
-                    className="font-semibold text-white"
-                  >
-                    Get 25% off <span aria-hidden="true"> &rarr;</span>
+                    className="font-semibold ">
+                    {`Get 25% off`} &rarr;
+                  </a>
+                  <div className="mt-8 text-sm">If you have it already,</div>
+                  <a
+                    href="https://skillsfaster.com/skills-pro/?code=WGGRIP63D&utm_source=g-grip&utm_medium=thank_you_page&utm_campaign=25off"
+                    className="font-semibold text-sm">
+                    {`also works for Professional Photography Skills`} &rarr;
                   </a>
                 </div>
               </div>
