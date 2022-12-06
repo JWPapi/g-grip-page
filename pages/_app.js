@@ -30,7 +30,7 @@ function App ({ Component, pageProps }) {
       })
   }, [])
 
-  const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>)
+  const getLayout = Component.getLayout || ((page) => <Layout checkoutURL={checkoutURL}>{page}</Layout>)
 
   return getLayout(<Component
     checkoutURL={checkoutURL}

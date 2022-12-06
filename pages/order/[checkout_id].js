@@ -126,7 +126,6 @@ export default function ThankYouPage({ order }) {
                   </dd>
                 </div>
               </dl>
-
               <div className="mt-16 border-t border-gray-200 py-6 text-right">
                 <a href="/#" className="text-sm font-medium text-primary">
                   {`Continue Shopping `}&rarr;
