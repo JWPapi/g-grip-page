@@ -38,9 +38,6 @@ export default function ThankYouPage({ order }) {
           </script>
         )}
       </Head>{' '}
-      <pre>
-        <code>{JSON.stringify(order, null, 2)}</code>
-      </pre>
       <SkillsBanner /> <SkillsPromo />
       <main className="relative lg:min-h-full -mt-8">
         <div>
