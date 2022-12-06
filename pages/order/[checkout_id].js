@@ -3,10 +3,44 @@ import _ from 'lodash'
 import SkillsPromo from '../../components/SkillsPromo'
 import SkillsBanner from '../../components/SkillsBanner'
 import Footer from '../../components/Footer'
+import Head from 'next/head'
 
 export default function ThankYouPage({ order }) {
   return (
     <>
+      <Head>
+        {process.browser && (
+          <script>
+            {`window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'ecommerce': {
+                  'purchase': {
+                    'actionField': {
+                      'id': '${order.id}',
+                      'revenue': '${order.grand_total}',
+                      'shipping': '${order.shipping.price}',
+                      'currency': '${order.currency}'
+                    },  
+                    'products': [
+                      ${_.map(order.items, (item) => {
+                        return `{
+                          'name': '${item.product.name}',
+                          'id': '${item.product.id}',
+                          'price': '${item.price}',
+                          'quantity': '${item.quantity}'
+                        }`
+                      }).join(',')}
+                    ]
+                } 
+                }  
+            })
+            `}
+          </script>
+        )}
+      </Head>{' '}
+      <pre>
+        <code>{JSON.stringify(order, null, 2)}</code>
+      </pre>
       <SkillsBanner /> <SkillsPromo />
       <main className="relative lg:min-h-full -mt-8">
         <div>
@@ -118,9 +152,5 @@ export async function getServerSideProps(context) {
   const { checkout_id } = context.query
   const data = await swell.cart.getOrder(checkout_id)
 
-  return {
-    props: {
-      order: data,
-    },
-  }
+  return { props: { order: data } }
 }
