@@ -16,7 +16,7 @@ export default function ThankYouPage({ order }) {
                 'ecommerce': {
                   'purchase': {
                     'actionField': {
-                      'id': '${order.id}',
+                      'id': '${order.number}',
                       'revenue': '${order.grand_total}',
                       'shipping': '${order.shipping.price}',
                       'currency': '${order.currency}'
