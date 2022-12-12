@@ -20,7 +20,7 @@ export default function NavBar({checkoutURL}) {
         <Link href="/#about"><a className="hover:text-gray-900 mx-2">About</a></Link>
         <Link href="/#techspecs"><a className="hover:text-gray-900 mx-2 text-body font-body">Tech Specs</a></Link>
         <a href={checkoutURL}>
-          <button className="ml-6 px-8 py-2">Pre-order now</button>
+          <button className="ml-6 px-8 py-2">Buy now</button>
         </a>
       </div>
     </div>
