@@ -12,7 +12,7 @@ export default function NavBar({checkoutURL}) {
       </div>
       <a href={checkoutURL}>
         <button className="px-4 py-2 mx-2 md:hidden">
-          Pre-order now
+          Buy now
         </button>
       </a>
       <div className="hidden md:block">
