@@ -47,7 +47,7 @@ export default function Shipping() {
           <p> ii) Exchanges
             Exact exchanges will be made on damaged or defective products. If a product arrives damaged, you must keep
             all original packaging material for insurance purposes. Claims must be made within fourteen (14) days of
-            receipt of your order via email to studio@gwp.wordpress.test.
+            receipt of your order via email to support@ggrip.com.
           </p>
           <p> In the event of an exchange or refund, please print off your order confirmation form which includes your
             unique order Number and return it with the damaged or defective item to the following address:
