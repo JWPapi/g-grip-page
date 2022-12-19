@@ -1,6 +1,6 @@
 export default function PricingSection({checkoutURL, price, salePrice, freeShipping, onQuantityClick }) {
   return (<section className="mt-16 md:mt-32">
-    <h2 className="text-center mb-4 md:mb-8">Get it before Christmas</h2>
+    <h2 className="text-center mb-4 md:mb-8">Now Available</h2>
     <div className="text-8xl leading-none text-center mb-4 -mt-4 tracking-tighter ">
       <span className="block md:inline">{price}</span>
     </div>
