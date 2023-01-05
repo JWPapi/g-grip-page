@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Layout from '../components/layout'
 
 function App ({ Component, pageProps }) {
-  const [price, setPrice] = useState('£69')
+  const [price, setPrice] = useState('£59')
   const [salePrice, setSalePrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
   const [currency, setCurrency] = useState('GBP')
@@ -20,11 +20,11 @@ function App ({ Component, pageProps }) {
           setCheckoutURL('https://g-grip.swell.store/buy/uZx7NaLM')
           setSalePrice('€59')
           setCurrency('EUR')
-          return setPrice('€79')
+          return setPrice('€69')
         }
         setCheckoutURL('https://g-grip.swell.store/buy/asmGsHr3')
         setSalePrice('$59')
-        setPrice('$79')
+        setPrice('$69')
         setCurrency('USD')
         if (continent !== 'North America') setFreeShipping(false)
       })
