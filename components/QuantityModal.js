@@ -46,7 +46,7 @@ export default function QuantityModal ({ show, currency, onBackgroundClick }) {
             <a href={purchaseLink.url} className="w-full">
               <button type="button"
                       className="inline-flex w-full justify-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm  focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:text-sm">
-                Pre-order multiple
+                Order multiple
               </button>
             </a>
           </div>
