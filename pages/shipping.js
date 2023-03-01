@@ -25,14 +25,14 @@ export default function Shipping() {
           </p>
           <h1>Return Policy</h1>
           <p>
-            Our policy is applicable for fourteen (14) days after you have received your order. If fourteen (14) days
+            Our policy is applicable for thirty (30) days after you have received your order. If thirty (30) days
             have
             gone by since receipt, unfortunately we can’t offer you refunds or exchanges. This is in addition to your
             statutory rights.
           </p>
           <p> i) Refunds
             If you are unhappy with your purchase you may return it in its original condition for a refund, provided it
-            is returned within fourteen (14) days from receipt by you of your order. Shipping costs will not be
+            is returned within thirty (30) days from receipt by you of your order. Shipping costs will not be
             refunded. Please contact studio@gwp.wordpress.test for further instructions.
           </p>
           <p> To be eligible for a refund, your item must be unused, undamaged and in the same condition that you
@@ -46,7 +46,7 @@ export default function Shipping() {
           </p>
           <p> ii) Exchanges
             Exact exchanges will be made on damaged or defective products. If a product arrives damaged, you must keep
-            all original packaging material for insurance purposes. Claims must be made within fourteen (14) days of
+            all original packaging material for insurance purposes. Claims must be made within thirty (30) days of
             receipt of your order via email to support@ggrip.com.
           </p>
           <p> In the event of an exchange or refund, please print off your order confirmation form which includes your
