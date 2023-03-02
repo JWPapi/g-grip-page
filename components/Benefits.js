@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Benefits () {
   return (
     <div className="mb-16">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-12 mb-8 ">
+    <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-4 gap-y-12 mb-8 ">
       <div className="flex flex-col gap-4">
         <Image src="/icons/benefits/ergonomic-grip.svg" alt="Ergonomic Grip" width={100} height={100}/>
         <h3 className="text-center">Ergonomic grip</h3>
