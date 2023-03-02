@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Footer from '../components/Footer'
-import NavBar from '../components/NavBar'
 import PricingSection from '../components/PricingSection'
 import QuantityModal from '../components/QuantityModal'
+import Benefits from '../components/Benefits'
 import { useState } from 'react'
 
 // ToDo: Separate in smaller components
@@ -30,6 +29,7 @@ export default function Page (props) {
                 <source src="/videos/introVideo.mp4" type="video/mp4"/>
               </video>
             </div>
+            <Benefits/>
             <div className="px-4 md:px-0">
               <h2 id="overview" className="px-0 anchor">Hold your phone like a camera</h2>
               <div className="c-grid-2 lg:px-0">
