@@ -22,7 +22,7 @@ export default function Benefits () {
       </div>
       <div className="flex flex-col gap-4">
         <Image src="/icons/benefits/20-hour-battery.svg" alt="battery life" width={100} height={100}/>
-        <h3 className="text-center">20 hours battery (4,000&nbsp;standby)</h3>
+        <h3 className="text-center">20 hours battery<br />(4,000standby)</h3>
 
       </div>
     </div>
