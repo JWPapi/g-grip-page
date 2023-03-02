@@ -19,6 +19,9 @@ export default function Document() {
         })(window,document,'script','dataLayer','GTM-KB56K3B');
         `}
       </Script>
+      <Script
+        src={`https://www.googleoptimize.com/optimize.js?id=OPT-N5XF7F3`}
+      />
       <Main/>
       <NextScript/>
       </body>
