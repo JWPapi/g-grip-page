@@ -1,8 +1,9 @@
 import '../styles/index.css'
 import { useEffect, useState } from 'react'
 import Layout from '../components/layout'
+import { Analytics } from '@vercel/analytics/react'
 
-function App ({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const [price, setPrice] = useState('£59')
   const [salePrice, setSalePrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
@@ -32,14 +33,19 @@ function App ({ Component, pageProps }) {
 
   const getLayout = Component.getLayout || ((page) => <Layout checkoutURL={checkoutURL}>{page}</Layout>)
 
-  return getLayout(<Component
-    checkoutURL={checkoutURL}
-    price={price}{...pageProps}
-    freeShipping={freeShipping}
-    salePrice={salePrice}
-    currency={currency}
-  />)
-
+  return getLayout(
+    <>
+      <Component
+        checkoutURL={checkoutURL}
+        price={price}
+        {...pageProps}
+        freeShipping={freeShipping}
+        salePrice={salePrice}
+        currency={currency}
+      />
+      <Analytics />
+    </>
+  )
 }
 
 export default App
