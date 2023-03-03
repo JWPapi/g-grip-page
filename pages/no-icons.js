@@ -13,11 +13,10 @@ export default function Page (props) {
   //send event to GTM on page load
   if (typeof window !== 'undefined') {
     window.dataLayer = window.dataLayer || []
-    function gtag(){dataLayer.push(arguments)}
-    gtag('js', new Date())
-    gtag('config', 'GTM-KB56K3B')
-
-
+    window.dataLayer.push({
+      'event': 'variantLoaded',
+      'variant': 'no-icons',
+    })
   }
 
   return (<>
