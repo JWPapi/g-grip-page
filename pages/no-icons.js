@@ -15,8 +15,8 @@ export default function Page (props) {
     window.dataLayer = window.dataLayer || []
     function gtag(){dataLayer.push(arguments)}
     gtag('js', new Date())
-    gtag('config', 'G-3Z6X9Z6L9C')
-    
+    gtag('config', 'GTM-KB56K3B')
+
 
   }
 
