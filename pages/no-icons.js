@@ -10,6 +10,16 @@ import { useState } from 'react'
 export default function Page (props) {
   const [quantityModalOpen, setQuantityModalOpen] = useState(false)
 
+  //send event to GTM on page load
+  if (typeof window !== 'undefined') {
+    window.dataLayer = window.dataLayer || []
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date())
+    gtag('config', 'G-3Z6X9Z6L9C')
+    
+
+  }
+
   return (<>
     <Head>
       <title>G–Grip by Greg Williams</title>
