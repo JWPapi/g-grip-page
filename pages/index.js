@@ -29,9 +29,9 @@ export default function Page (props) {
                 <source src="/videos/introVideo.mp4" type="video/mp4"/>
               </video>
             </div>
+            <h2 id="overview" className="px-4 mb-8 text-xl anchor text-center">Hold your phone like a camera</h2>
             <Benefits/>
             <div className="px-4 md:px-0">
-              <h2 id="overview" className="px-0 anchor">Hold your phone like a camera</h2>
               <div className="c-grid-2 lg:px-0">
                 <div>
                   <h5>Universally compatible</h5>
