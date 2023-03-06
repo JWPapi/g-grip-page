@@ -182,7 +182,7 @@ export default function Page (props) {
         <div className="mb-32 text-center">
           <div className="text-4xl md:text-7xl">“It’s not a gadget, it’s an&nbsp;instrument”</div>
           <div> –</div>
-          <div className="italic"> Baz Luhrmann (Legendary Filmmaker)</div>
+          <div className="italic"> Baz Luhrmann, Director (Elvis, 2022)</div>
           <div className="flex justify-center mt-32">
             <a href="https://instagram.com/theggrip" target="_blank" rel="noreferrer">
             <Image src={'/icons/instagram.svg'} width={64} height={64} alt="Instagram"/>
