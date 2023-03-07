@@ -20,9 +20,7 @@ export default function Page (props) {
     <div className="pt-4 md:pt-8 w-screen anchor" id="top">
       <main>
         <div>
-          <div className="flex flex-col justify-center px-4 pt-8">
-            <Image src="/img/logo_big_red.svg" alt="G-Grip Logo" width={567} height={209}/>
-          </div>
+    
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
               <video autoPlay muted playsInline loop className="hidden sm:block">
@@ -57,7 +55,7 @@ export default function Page (props) {
         </div>
         <section className="mb-8 md:mb-16 anchor">
           <Image src={'/img/g-grip-hand-on-iphone.jpg?v=2'} alt="ggrip_holding" width={2400} height={1600}/>
-          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-1 md:mt-2">
+          <div className="grid md:grid-cols-2 gap-2 md:gap-4 mt-1 md:mt-2">
             <Image src={'/img/g-grip-on-iphone.jpg'} alt="ggrip_on_iphone" width={2400} height={1600}/> <Image
             src={'/img/g-grip-fitting-to-iphone.jpg'} alt="ggrip_attaching" width={2400} height={1600}/> <Image
             src={'/img/g-grip-on-iphone-portrait.jpg'} alt="ggrip_on_iphone_portrait" width={2400} height={1600}/>
@@ -83,7 +81,7 @@ export default function Page (props) {
           <h2>Unboxing</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
-              <iframe src="https://player.vimeo.com/video/805500478?h=9a39b0df3c" width="640" height="800"
+              <iframe src="https://player.vimeo.com/video/805500478?h=9a39b0df3c" width="640" height="480"
                       style={{width: '100%'}}
                       frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
