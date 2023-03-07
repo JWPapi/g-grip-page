@@ -4,6 +4,7 @@ import PricingSection from '../components/PricingSection'
 import QuantityModal from '../components/QuantityModal'
 import Benefits from '../components/Benefits'
 import { useState } from 'react'
+import { Slideshow } from '../components/SlideShow'
 
 // ToDo: Separate in smaller components
 // ToDo: Consistent margin cascading
@@ -14,13 +15,15 @@ export default function Page (props) {
   return (<>
     <Head>
       <title>G–Grip by Greg Williams</title>
+      <link rel="stylesheet" href="/path/to/flickity.css" media="screen"/>
+      <script src="/path/to/flickity.pkgd.min.js"></script>
     </Head>
-    <link rel="prefetch" href={props.checkoutURL} />
-    <link rel="prerender" href={props.checkoutURL} />
+    <link rel="prefetch" href={props.checkoutURL}/>
+    <link rel="prerender" href={props.checkoutURL}/>
     <div className="pt-4 md:pt-8 w-screen anchor" id="top">
       <main>
         <div>
-    
+
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
               <video autoPlay muted playsInline loop className="hidden sm:block">
@@ -54,15 +57,8 @@ export default function Page (props) {
 
         </div>
         <section className="mb-8 md:mb-16 anchor">
-          <Image src={'/img/g-grip-hand-on-iphone.jpg?v=2'} alt="ggrip_holding" width={2400} height={1600}/>
-          <div className="grid md:grid-cols-2 gap-2 md:gap-4 mt-1 md:mt-2">
-            <Image src={'/img/g-grip-on-iphone.jpg'} alt="ggrip_on_iphone" width={2400} height={1600}/> <Image
-            src={'/img/g-grip-fitting-to-iphone.jpg'} alt="ggrip_attaching" width={2400} height={1600}/> <Image
-            src={'/img/g-grip-on-iphone-portrait.jpg'} alt="ggrip_on_iphone_portrait" width={2400} height={1600}/>
-            <Image src={'/img/g-grip-on-iphone-portrait-2.jpg'} alt="ggrip_on_iphone_portrait_2" width={2400}
-                   height={1600}/>
+     <Slideshow />
 
-          </div>
         </section>
 
         <section className="mb-12">
@@ -82,7 +78,7 @@ export default function Page (props) {
           <div className="mt-4 mb-8">
             <div className="md:hidden">
               <iframe src="https://player.vimeo.com/video/805500478?h=9a39b0df3c" width="640" height="480"
-                      style={{width: '100%'}}
+                      style={{ width: '100%' }}
                       frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
             </div>
@@ -189,8 +185,8 @@ export default function Page (props) {
           <div> –</div>
           <div className="italic"> Baz Luhrmann, Director (Elvis, 2022)</div>
           <div className="flex justify-center mt-32">
-            <a href="https://instagram.com/theggrip" target="_blank" rel="noreferrer">
-            <Image src={'/icons/instagram.svg'} width={64} height={64} alt="Instagram"/>
+            <a href="https://instagram.com/theggrip" target="_blank" rel="noreferrer"> <Image
+              src={'/icons/instagram.svg'} width={64} height={64} alt="Instagram"/>
               <div className="mt-1">Follow G-Grip on Instagram</div>
             </a>
           </div>
@@ -234,11 +230,14 @@ export default function Page (props) {
           </div>
         </section>
       </main>
-       <QuantityModal show={quantityModalOpen} currency={props.currency}
-                               onBackgroundClick={setQuantityModalOpen}/>
+      <QuantityModal show={quantityModalOpen} currency={props.currency}
+                     onBackgroundClick={setQuantityModalOpen}/>
     </div>
   </>)
 }
+
+
+
 
 
 

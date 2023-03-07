@@ -1,7 +1,9 @@
 import '../styles/index.css'
+import 'react-slideshow-image/dist/styles.css'
 import { useEffect, useState } from 'react'
 import Layout from '../components/layout'
 import { Analytics } from '@vercel/analytics/react'
+
 
 function App({ Component, pageProps }) {
   const [price, setPrice] = useState('£59')
