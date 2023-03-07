@@ -25,8 +25,11 @@ export default function Page (props) {
           </div>
           <div className="my-8">
             <div className="mb-8 md:mb-16 mt-8">
-              <video autoPlay muted playsInline loop>
+              <video autoPlay muted playsInline loop className="hidden sm:block">
                 <source src="/videos/introVideo.mp4" type="video/mp4"/>
+              </video>
+              <video autoPlay muted playsInline loop className="block sm:hidden">
+                <source src="/videos/ggrip_cgi_4_5.mp4" type="video/mp4"/>
               </video>
             </div>
             <h2 id="overview" className="px-4 mb-8 text-xl anchor text-center">Hold your phone like a camera</h2>
@@ -67,8 +70,11 @@ export default function Page (props) {
         <section className="mb-12">
           <h2>The G-Grip in action</h2>
           <div className="mt-4 mb-8">
-            <video autoPlay muted playsInline loop>
+            <video autoPlay muted playsInline loop className="hidden sm:block">
               <source src="/videos/g_grip_in_action.mp4" type="video/mp4"/>
+            </video>
+            <video autoPlay muted playsInline loop className="block sm:hidden">
+              <source src="/videos/ggrip_in_action_4_5.mp4" type="video/mp4"/>
             </video>
           </div>
         </section>
@@ -77,8 +83,9 @@ export default function Page (props) {
           <h2>Unboxing</h2>
           <div className="mt-4 mb-8">
             <div className="md:hidden">
-              <iframe src="https://player.vimeo.com/video/769619524?h=fc1cc5987c" width="1024" height="576"
-                      style={{ maxWidth: '100%', height: 'calc(100vw * 0.5625)' }} frameBorder="0"
+              <iframe src="https://player.vimeo.com/video/805500478?h=9a39b0df3c" width="640" height="800"
+                      style={{width: '100%'}}
+                      frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="hidden md:block">
