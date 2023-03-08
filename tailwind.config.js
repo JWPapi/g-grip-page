@@ -10,6 +10,9 @@ module.exports = {
       },
       colors: {
         'primary': '#e30613',
+      },
+      aspectRatio: {
+        '4/5': '4 / 5',
       }
     },
     fontFamily: {
@@ -20,6 +23,7 @@ module.exports = {
   variants: {
     extend: {},
   },
+
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
