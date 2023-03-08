@@ -38,9 +38,6 @@ export default function Page(props) {
       <div className="pt-4 md:pt-8 w-screen anchor" id="top">
         <main>
           <div>
-            <div className="flex-col justify-center px-4 pt-8 hidden sm:flex">
-              <Image src="/img/logo_big_red.svg" alt="G-Grip Logo" width={567} height={209} />
-            </div>
             <div className="my-8">
               <div className="mb-8 md:mb-16 mt-8">
                 <div className="mobilePlaceHolder">

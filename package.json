@@ -37,7 +37,7 @@
     "swell-js": "^3.17.10"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^12.3.0",
+    "@next/bundle-analyzer": "^13.2.3",
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.2",
     "dotenv": "^16.0.3",

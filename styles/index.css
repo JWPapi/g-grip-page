@@ -18,6 +18,7 @@
 
     main {
         @apply max-w-5xl mx-auto mt-16;
+        margin-top: 3rem;
     }
 
     h2, h5 {
@@ -64,6 +65,15 @@
       background-color: #e20007;
     }
 }
+
+@media(min-width: 640px) {
+    .mobilePlaceHolder {
+        width: min(100vw, 1024px);
+        height: calc(min(100vw, 1024px) * 9 / 16);
+        background-color: #e20007;
+    }
+}
+
 
 [class^="number-slide"],
 [class*=" number-slide"] {

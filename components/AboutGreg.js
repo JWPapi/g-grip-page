@@ -1,6 +1,6 @@
 export default function AboutGreg() {
   return (
-    <div className="c-grid-2 px-4 xl:px-0 mb-16">
+    <div className="c-grid-2 px-4 xl:px-4 mb-16">
       <div>
         <h5>Greg Williams</h5>
         <p>
