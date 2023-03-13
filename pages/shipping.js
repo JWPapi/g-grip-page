@@ -89,16 +89,8 @@ export default function Shipping() {
             shipping notification. We will do our best to work with you and the shipping service to locate your package,
             and/or send you a replacement. Unfortunately, we are unable to assist after this time frame has passed.
           </p>
-          <p> Warranties
-            Leica Camera AG (“LEICA”) offers various product warranties from the date of purchase from an authorised
-            LEICA dealership (which includes GWP) for any LEICA product and all accessories included in the original
-            packaging. The product warranty is subject to various warranty conditions. For further information please
-            see here: https://uk.leica-camera.com/warranty.
-          </p>
-          <p> Your statutory warranty rights towards the seller of your LEICA products remain unaffected by such product
-            warranties.
-          </p>
-          <p> Last updated: February 2021
+
+          <p> Last updated: March 2023
           </p>
 
         </article>

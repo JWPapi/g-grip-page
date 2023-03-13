@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Benefits () {
   return (<div className="mb-16">
-    <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-4 gap-y-12 mb-8 ">
+    <div className="grid grid-cols-2 md:grid-cols-4 md:gap-x-4 gap-y-12 mb-8 leading-snug">
       <div className="flex flex-col gap-4 items-center">
         <div style={{ width: '128px', height: '128px', position: 'relative' }}>
           <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
