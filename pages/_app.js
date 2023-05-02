@@ -10,7 +10,7 @@ function App({ Component, pageProps }) {
   const [salePrice, setSalePrice] = useState('£49')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
   const [currency, setCurrency] = useState('GBP')
-  const [freeShipping, setFreeShipping] = useState(true)
+  const [freeShipping, setFreeShipping] = useState(false)
 
   useEffect(() => {
     //ToDo: Should be just one of 3 states
