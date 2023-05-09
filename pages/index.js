@@ -19,7 +19,7 @@ export default function Page(props) {
   useEffect(() => {
     if (isMobile) {
       document.getElementById('introVideo').src = '/videos/ggrip_cgi_4_5.mp4'
-      document.getElementById('inActionVideo').src = '/videos/ad_square_1350_25 (720p).mp4'
+      document.getElementById('inActionVideo').src = '/videos/ad_square_v2.mp4'
       document.getElementById('unboxingVideo').src = 'https://player.vimeo.com/video/805500478?h=9a39b0df3c'
     } else {
       document.getElementById('introVideo').src = '/videos/introVideo.mp4'
