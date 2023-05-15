@@ -63,7 +63,7 @@ export default function Page(props) {
                   </div>
                   <div className="mt-4 md:mt-0">
                     <p>
-                      A Bluetooth® shutter button in an ergonomically designed grip that enables you to hold and shoot
+                      An award winning Bluetooth® shutter button in an ergonomically designed grip that enables you to hold and shoot
                       one-handed like a traditional&nbsp;camera.{' '}
                     </p>
                   </div>

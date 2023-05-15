@@ -21,7 +21,7 @@ export const Slideshow = ()  => {
       <div className="navigation-wrapper">
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1">
-            <Image src={'/img/g-grip-hand-on-iphone.jpg?v=2'} alt="ggrip_holding" width={2400} height={1600} />
+            <Image src={'/img/award-middle-g-grip-hand-on-iphone.jpg?v=2'} alt="ggrip_holding" width={2400} height={1600} />
           </div>
           <div className="keen-slider__slide number-slide2">
             <Image src={'/img/g-grip-on-iphone.jpg'} alt="ggrip_on_iphone" width={2400} height={1600} />{' '}

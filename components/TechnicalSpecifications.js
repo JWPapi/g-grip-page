@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function TechnicalSpecifications() {
   return (
     <>
@@ -5,6 +7,10 @@ export default function TechnicalSpecifications() {
       <h2 className=" max-w-sm mx-auto text-center">
         hours battery life in normal use <br /> and 4,000 hours on standby.{' '}
       </h2>
+
+      <div className="flex items-center justify-center py-16">
+        <Image className="mx-auto my-8 " src={'/img/award-winner-design.png'} width="480" height="480" />
+      </div>
       <h2 id="techspecs" className="anchor mt-16 md:mt-32">
         Technical specifications
       </h2>
