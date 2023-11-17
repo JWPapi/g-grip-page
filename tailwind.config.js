@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         'primary': '#e30613',
+        'black-friday': '#E42024',
       },
       aspectRatio: {
         '4/5': '4 / 5',

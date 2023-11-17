@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 function App({ Component, pageProps }) {
   const [price, setPrice] = useState('£59')
-  const [salePrice, setSalePrice] = useState('£49')
+  const [salePrice, setSalePrice] = useState('£39')
   const [checkoutURL, setCheckoutURL] = useState('https://g-grip.swell.store/buy/VAnIaAiK')
   const [currency, setCurrency] = useState('GBP')
   const [freeShipping, setFreeShipping] = useState(false)
@@ -21,12 +21,12 @@ function App({ Component, pageProps }) {
         if (country === 'United Kingdom') return
         if (continent === 'Europe') {
           setCheckoutURL('https://g-grip.swell.store/buy/uZx7NaLM')
-          setSalePrice('€59')
+          setSalePrice('€49')
           setCurrency('EUR')
           return setPrice('€69')
         }
         setCheckoutURL('https://g-grip.swell.store/buy/asmGsHr3')
-        setSalePrice('$59')
+        setSalePrice('$49')
         setPrice('$69')
         setCurrency('USD')
         if (continent !== 'North America') setFreeShipping(false)
