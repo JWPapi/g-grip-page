@@ -17,7 +17,8 @@ export default function GettingStarted() {
 
           <small className="mt-2 block">
             {' '}
-            * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings.{' '}
+            * They will not adhere to rubber, matte glass, silicon, TPU or soft touch&nbsp;coatings. Works with the new
+            Apple iPhone suede case.
           </small>
           <h5 className="mt-4">Turning on</h5>
           <ul>
