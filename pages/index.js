@@ -12,7 +12,8 @@ import GettingStarted from '../components/GettingStarted'
 import TechnicalSpecifications from '../components/TechnicalSpecifications'
 import AboutGreg from '../components/AboutGreg'
 
-export default function Page(props) {
+export default function Page({ saleText, ...props }) {
+  console.log(saleText)
   const [quantityModalOpen, setQuantityModalOpen] = useState(false)
   const isMobile = useMediaQuery({ query: '(max-width: 640px)' })
 
@@ -87,7 +88,7 @@ export default function Page(props) {
               </video>
             </div>
           </section>
-          <PricingSection {...props} onQuantityClick={setQuantityModalOpen} />
+          <PricingSection {...props} onQuantityClick={setQuantityModalOpen} saleText={saleText} />
           <section className="mb-4 md:mb-12 anchor" id="about">
             <h2>Unboxing</h2>
             <div className="mt-4 mb-8">
@@ -107,7 +108,7 @@ export default function Page(props) {
           <section className="mt-16">
             <TechnicalSpecifications /> <GettingStarted />
           </section>
-          <PricingSection {...props} onQuantityClick={setQuantityModalOpen} />
+          <PricingSection {...props} onQuantityClick={setQuantityModalOpen} saleText={saleText} />
           <div className="mb-32 text-center">
             <div className="text-4xl md:text-7xl">“It’s not a gadget, it’s an&nbsp;instrument”</div>
             <div> –</div>
@@ -126,4 +127,23 @@ export default function Page(props) {
       </div>
     </>
   )
+}
+
+
+export async function getStaticProps() {
+  // Fetch data from an API, CMS, or database
+  const swell = require('swell-js')
+  swell.init('g-grip', 'pk_4yeESF2sYLvnuIY42XlQ6vPZJTSv6Mro')
+
+  //get sale attribute from product 632b02a037b96a0013331679
+  const product = await swell.products.get('632b02a037b96a0013331679')
+
+
+  return {
+    props: {
+      saleText: product.attributes.sale.value,
+    },
+    // Revalidate at most every 1 second (for example)
+    revalidate: 10, // In seconds
+  };
 }
